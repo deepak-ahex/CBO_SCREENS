@@ -1,0 +1,55 @@
+
+.ClientID-Advanced{
+
+    font-family: 'Montserrat', sans-serif;
+    
+.timeline{
+ margin-bottom: 50px;
+}
+
+input[type=text] {
+	width: 580px;
+	margin-bottom: 30px;
+}
+.btn-primary {
+	width: 70%;
+	display: block;
+    margin: 0 auto;
+    background-color: $bluecolor;
+}
+
+button.btn.btn-outline-secondary.dropdown-toggle {
+    height: 38px;
+    padding-top: 9px;
+    border: 1px solid $greycolor;
+}
+
+.form-section img {
+    margin-top: 40px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.form-section a{
+    display: block;
+    padding-top: 20px;
+}
+
+
+
+@media screen and (max-width:768px){
+
+    input[type=text] {
+        width:300px;
+        margin-bottom: 30px;
+    }
+
+    .form-section {
+        width: 300px;
+        margin: 0 auto;
+	}
+	
+}
+
+}

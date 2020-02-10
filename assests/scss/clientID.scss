@@ -1,0 +1,154 @@
+.clientID-wrapper{
+
+::-webkit-input-placeholder { 
+    font-size: 15px;
+    line-height: 53px;
+    color: #bdbdbd;
+    padding-left: 10px !important;
+  }
+
+input[type=text]{
+    width: 620px;
+    margin-bottom: 60px;
+    height: 35px;
+}
+label{
+    color: #67757c;
+    font-size: 24px;
+    line-height: 53px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+}
+
+input[type=submit] {
+    font-family: Montserrat;
+    display: block;
+    width: 70%;
+    background-color:$bluecolor;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+.section-1{
+    margin: 0 auto;
+    width: 620px;
+     
+    img{
+        padding-top: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+        p{
+            padding:40px 0px 40px 0px;
+            font-size: 16px;
+            line-height: 53px;
+            color: $bluecolor;
+            font-family: Montserrat;
+            font-weight: 700;
+            text-align: center;
+
+            a{
+                color: $bluecolor;
+                text-decoration: underline;
+            }
+    }
+}
+
+.timeline {
+	padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+	
+	ul {
+		li {
+			display: inline-block;
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				width: 66px;
+				height: 2px;
+				border-bottom: 2px solid #adadad;
+				top: 24px;
+				right: -65px;
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+			&:nth-child(1) {
+				&::after {
+					border-bottom: 2px solid #0197a9;
+				}
+			}
+		}
+	}
+}
+ul {
+	li {
+		border: 1px solid #adadad;
+		padding: 14px 23px;
+		margin-right: 60px;
+		list-style-type: none;
+		border-radius: 100%;
+		font-family:Montserrat;
+		&:first-child {
+			border: 1px solid #0197a9;
+			padding: 14px 23px;
+			margin-right: 60px;
+			list-style-type: none;
+			border-radius: 100%;
+			font-family:Montserrat;
+		}
+	}
+	display: block;
+	margin: 0 auto;
+}
+@media screen and (max-width:600px) {
+	input[type=text] {
+		width: 300px;
+		margin-bottom: 30px;
+	}
+	.form-section {
+		width: 300px;
+		margin: 0 auto;
+	}
+	ul {
+		li {
+			padding: 9px 16px;
+			&:first-child {
+				padding: 9px 18px;
+			}
+		}
+	}
+	.timeline {
+		ul {
+			li {
+				&::after {
+					position: absolute;
+					top: 20px;
+					right: -66px;
+				}
+			}
+		}
+	}
+	img.branding {
+		display: none;
+	}
+	img.branding-m {
+		display: block;
+    }
+    label {
+        font-size: 22px;
+        line-height: 53px;
+        font-family: "Roboto", sans-serif;
+        display: initial;
+        margin: 0 auto;
+    }
+}
+}

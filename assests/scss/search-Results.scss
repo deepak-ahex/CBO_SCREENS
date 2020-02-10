@@ -1,0 +1,151 @@
+.search-results-wrapper{
+
+p {
+	margin-bottom: 5px !important;
+}
+.info-icon-section {
+	i {
+		color: $bluecolor;
+	}
+}
+span {
+	color: $bluecolor;
+}
+input[type=text] {
+	width: 620px;
+	margin-bottom: 20px;
+}
+.btn-primary {
+	width: 110px;
+	height: 35px;
+	background-color: $bluecolor;
+}
+.form-section {
+	width: 620px;
+	margin: 0 auto;
+	a {
+		display: block;
+		padding-top: 20px;
+	}
+}
+.timeline {
+	padding: 20px 0px 15px 0px;
+	display: flex;
+	ul {
+		li {
+			display: inline-block;
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				width: 25px;
+				height: 2px;
+				border-bottom: 2px solid #adadad;
+				top: 24px;
+				right: -26px;
+			}
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+			&:nth-child(1) {
+				&::after {
+					border-bottom: 2px solid $bluecolor;
+				}
+			}
+		}
+	}
+}
+ul {
+	li {
+		border: 1px solid #adadad;
+		padding: 14px 23px;
+		margin-right: 20px;
+		list-style-type: none;
+		border-radius: 100%;
+		font-family: 'Montserrat', sans-serif;
+		&:first-child {
+			border: 1px solid $bluecolor;
+			padding: 14px 23px;
+			margin-right: 20px;
+			list-style-type: none;
+			border-radius: 100%;
+			font-family: 'Montserrat', sans-serif;
+		}
+	}
+	display: block;
+	margin: 0 auto;
+}
+.line {
+	height: 1px;
+	width: 5px;
+}
+p.required-text {
+	color: $orangecolor;
+}
+.upload {
+	padding: 20px 0px;
+	margin: 0 auto;
+}
+.clear-fix {
+	overflow: auto;
+}
+.info-wrapper {
+	padding: 20px;
+	margin-top: 30px;
+	border: 1px solid $orangecolor;
+	background-color: #fafafa;
+	overflow: auto;
+}
+.info {
+	overflow: auto;
+}
+p.info-title {
+	font-weight: 700;
+}
+img.branding-m {
+	display: none;
+}
+@media screen and (max-width:768px) {
+	input[type=text] {
+		width: 300px;
+		margin-bottom: 30px;
+	}
+	.form-section {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.info-text {
+		width: 60%;
+	}
+	.inner-info {
+		width: 40%;
+	}
+	ul {
+		li {
+			padding: 9px 16px;
+			&:first-child {
+				padding: 9px 18px;
+			}
+		}
+	}
+	.timeline {
+		ul {
+			li {
+				&::after {
+					position: absolute;
+					top: 20px;
+					right: -26px;
+				}
+			}
+		}
+	}
+	img.branding {
+		display: none;
+	}
+	img.branding-m {
+		display: block;
+	}
+}
+}
