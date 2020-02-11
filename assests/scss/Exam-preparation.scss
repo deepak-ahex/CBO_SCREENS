@@ -1,5 +1,8 @@
 
 .Exam-preparation-wrapper{
+	margin-top: 35px;
+	font-family: 'Montserrat', sans-serif;
+	
 .btn-primary {
 	width: 70%;
 	display: block;
@@ -21,103 +24,40 @@
 		font-size: 24px;
 		line-height: 53px;
 		color: #67757c;
+		margin-left: 18px;
+	}
+	h4{
+		font-size: 17px;
+		line-height: 53px;
+		color: #67757c;
+		margin-bottom: 0px;
 	}
 }
-.timeline {
-	padding: 20px 0px 8px 0px;
-	display: flex;
-	ul {
-		li {
-			display: inline-block;
-			position: relative;
-			&::after {
-				position: absolute;
-				content: "";
-				width: 25px;
-				height: 2px;
-				border-bottom: 2px solid #adadad;
-				top: 24px;
-				right: -26px;
-			}
-			&:last-child {
-				&::after {
-					display: none;
-				}
-			}
-			&:nth-child(1) {
-				&::after {
-					border-bottom: 2px solid #0197a9;
-				}
-			}
-		}
-	}
-}
-ul {
-	li {
-		border: 1px solid #adadad;
-		padding: 14px 23px;
-		margin-right: 20px;
-		list-style-type: none;
-		border-radius: 100%;
-		font-family: 'Montserrat', sans-serif;
-		&:first-child {
-			border: 1px solid #0197a9;
-			padding: 14px 23px;
-			margin-right: 20px;
-			list-style-type: none;
-			border-radius: 100%;
-			font-family: 'Montserrat', sans-serif;
-		}
-	}
-	display: block;
-	margin: 0 auto;
-}
-.line {
-	height: 1px;
-	width: 5px;
-}
+
 .examination-section {
-	padding: 20px;
+	padding: 10px 15px;
 	border: 1px solid #67757c;
 	background: #fafafa;
 	border-radius: 3px;
-	margin-bottom: 20px;
+	margin: 0px 15px 20px 15px;
 }
-@media screen and (max-width:768px) {
-	input[type=text] {
-		width: 300px;
-		margin-bottom: 30px;
-	}
-	.form-section {
-		width: 300px;
-		margin: 0 auto;
+@media screen and (max-width: 600px) {
+	.form-section{
 		h3 {
 			font-size: 17px;
-			line-height: 28px;
+			line-height: 53px;
 			color: #67757c;
+			margin-left: 18px;
+			margin-bottom: 0px;
+			font-weight: 400;
 		}
 	}
-	ul {
-		li {
-			padding: 9px 16px;
-			&:first-child {
-				padding: 9px 18px;
-			}
-		}
-	}
-	.timeline {
-		ul {
-			li {
-				&::after {
-					position: absolute;
-					top: 20px;
-					right: -26px;
-				}
-			}
-		}
-	}
-	.title-section {
-		width: 100%;
-	}
+h4{
+	font-size: 14px;
+	line-height: 53px;
+	color: #67757c;
 }
+
+}
+
 }

@@ -1,0 +1,65 @@
+.confirm_Appointment_FromEmail {
+
+  .form-section {
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title-section {
+    margin: 0 auto;
+    display: block;
+
+    h2 {
+      font-size: 20px;
+      color: #67757c;
+      margin: 50px 0px;
+    }
+    p {
+      margin-bottom: 50px;
+      
+    }
+  }
+  .btn-primary {
+    width: 50%;
+    height: 35px;
+    border-radius: 3px;
+    background-color: $bluecolor;
+    
+  }
+  .btn-warning {
+    width: 50%;
+    height: 35px;
+    border-radius: 3px;
+    background-color: $orangecolor;
+    color: #fff;
+  }
+  @media screen and (max-width: 600px) {
+    .title-section {
+      width: 260px;
+    }
+    .btn-primary {
+      width: 260px;
+    }
+    .btn-warning {
+      width: 260px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    h3{
+        font-size: 17px;
+        line-height: 16px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .form-section {
+      width: 620px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+}

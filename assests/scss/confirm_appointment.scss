@@ -1,4 +1,7 @@
 .confirm_Appointment_wrapper{
+
+	margin-top: 35px;
+
 input[type=text] {
 	width: 620px;
 	margin-bottom: 30px;
@@ -20,6 +23,10 @@ input[type=text] {
 	a {
 		display: block;
 		padding-top: 20px;
+		text-decoration: underline;
+		& hover{
+			color: $bluecolor;
+		}
 	}
 	h3 {
 		font-size: 24px;
@@ -76,46 +83,23 @@ ul {
 	display: block;
 	margin: 0 auto;
 }
-.line {
-	height: 1px;
-	width: 5px;
-}
-p.required-text {
-	color: $orangecolor;
-}
 .title-section {
 	width: 50%;
 }
-@media screen and (max-width:768px) {
-	input[type=text] {
-		width: 300px;
-		margin-bottom: 30px;
-	}
-	.form-section {
-		width: 300px;
-		margin: 0 auto;
-	}
-	ul {
-		li {
-			padding: 9px 16px;
-			&:first-child {
-				padding: 9px 18px;
-			}
+
+	@media screen and (max-width:768px) {
+		.title-section {
+			width: 100%;
+			padding-left: 30px;
 		}
+		
+		label {
+			font-size: 17px;
+			line-height: 53px;
+			font-family: "Roboto", sans-serif;
+			color: #67757c !important;
+			margin: 0 auto;
+		  }
 	}
-	.timeline {
-		ul {
-			li {
-				&::after {
-					position: absolute;
-					top: 20px;
-					right: -26px;
-				}
-			}
-		}
-	}
-	.title-section {
-		width: 100%;
-	}
-}
+
 }

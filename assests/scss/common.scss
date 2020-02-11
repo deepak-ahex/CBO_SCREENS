@@ -1,8 +1,28 @@
+
+h2,h3,p{
+	font-family: 'Montserrat', sans-serif;
+}
+h3 {
+	font-size: 24px;
+	line-height: 53px;
+	color: $bluecolor;
+}
+
 .form-section {
 	width: 620px;
 	margin: 0 auto;
 }
 
+p.required-text{
+    color:$orangecolor;
+}
+
+img.footer-img{
+	position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 //form navigation timeline
 .timeline {
 	padding-top: 40px;
@@ -20,7 +40,7 @@
 				height: 2px;
 				border-bottom: 2px solid #adadad;
 				top: 24px;
-				right: -65px;
+				right: -66px;
 			}
 			&:last-child {
 				&::after {
@@ -55,45 +75,88 @@ ul {
 	display: block;
 	margin: 0 auto;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
 	input[type=text] {
-		width: 300px;
-		margin-bottom: 30px;
+	  width: 300px !important;
+	  margin-bottom: 30px;
 	}
+  
 	.form-section {
-		width: 300px;
+	  width: 300px;
+	  margin: 0 auto;
+	}
+	form{
 		margin: 0 auto;
+		width: fit-content;
 	}
-	ul {
-		li {
-			padding: 9px 16px;
-			&:first-child {
-				padding: 9px 18px;
-			}
-		}
+  
+	ul li {
+	  padding: 8px 16px;
+  
+	  &:first-child {
+		padding: 8px 14px;
+	  }
 	}
-	.timeline {
-		ul {
-			li {
-				&::after {
-					position: absolute;
-					top: 20px;
-					right: -66px;
-				}
-			}
-		}
-	}
-	img.branding {
+  
+	.timeline ul li {
+	  &::after {
+		position: absolute;
+		content: "";
+		width: 31px;
+		height: 2px;
+		border-bottom: 2px solid #adadad;
+		top: 18px;
+		right: -31px;
+	  }
+  
+	  &:last-child::after {
 		display: none;
+	  }
+  
+	  &:nth-child(1)::after {
+		border-bottom: 2px solid #0197a9;
+	  }
 	}
-	img.branding-m {
+  
+	ul {
+	  display: block;
+	  margin: 0 auto;
+  
+	  li {
+		border: 1px solid #adadad;
+		padding: 8px 14px;
+		margin-right: 26px;
+		list-style-type: none;
+		border-radius: 100%;
+		font-family: Montserrat;
+  
+		&:first-child {
+		  border: 1px solid #0197a9;
+		  padding: 8px 16px;
+		  margin-right: 26px;
+		  list-style-type: none;
+		  border-radius: 100%;
+		  font-family: Montserrat;
+		}
+	  }
+	}
+  
+	img {
+	  &.branding {
+		display: none;
+	  }
+  
+	  &.branding-m {
 		display: block;
-    }
-    label {
-        font-size: 22px;
-        line-height: 53px;
-        font-family: "Roboto", sans-serif;
-        display: initial;
-        margin: 0 auto;
-    }
-}
+	  }
+	}
+  
+	label {
+	  font-size: 17px;
+	  line-height: 53px;
+	  font-family: 'Montserrat', sans-serif;
+	  color: #67757c !important;
+	  display: initial;
+	  margin: 0 auto;
+	}
+  }

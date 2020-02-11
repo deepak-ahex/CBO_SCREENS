@@ -1,5 +1,7 @@
 .clientID-wrapper{
 
+    margin-top: 50px;
+
 ::-webkit-input-placeholder { 
     font-size: 15px;
     line-height: 53px;
@@ -11,13 +13,6 @@ input[type=text]{
     width: 620px;
     margin-bottom: 60px;
     height: 35px;
-}
-label{
-    color: #67757c;
-    font-size: 24px;
-    line-height: 53px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 50px;
 }
 
 input[type=submit] {
@@ -109,46 +104,5 @@ ul {
 	display: block;
 	margin: 0 auto;
 }
-@media screen and (max-width:600px) {
-	input[type=text] {
-		width: 300px;
-		margin-bottom: 30px;
-	}
-	.form-section {
-		width: 300px;
-		margin: 0 auto;
-	}
-	ul {
-		li {
-			padding: 9px 16px;
-			&:first-child {
-				padding: 9px 18px;
-			}
-		}
-	}
-	.timeline {
-		ul {
-			li {
-				&::after {
-					position: absolute;
-					top: 20px;
-					right: -66px;
-				}
-			}
-		}
-	}
-	img.branding {
-		display: none;
-	}
-	img.branding-m {
-		display: block;
-    }
-    label {
-        font-size: 22px;
-        line-height: 53px;
-        font-family: "Roboto", sans-serif;
-        display: initial;
-        margin: 0 auto;
-    }
-}
+
 }

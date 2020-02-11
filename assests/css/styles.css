@@ -1,121 +1,102 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
-.clientID-wrapper ::-webkit-input-placeholder {
-  font-size: 15px;
-  line-height: 53px;
-  color: #bdbdbd;
-  padding-left: 10px !important; }
-
-.clientID-wrapper input[type=text] {
-  width: 620px;
-  margin-bottom: 60px;
-  height: 35px; }
-
-.clientID-wrapper label {
-  color: #67757c;
-  font-size: 24px;
-  line-height: 53px;
-  font-family: 'Roboto', sans-serif;
+.clientID-wrapper {
   margin-top: 50px; }
-
-.clientID-wrapper input[type=submit] {
-  font-family: Montserrat;
-  display: block;
-  width: 70%;
-  background-color: #0198a9;
-  color: white;
-  padding: 8px 20px;
-  margin: 0 auto;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer; }
-
-.clientID-wrapper .section-1 {
-  margin: 0 auto;
-  width: 620px; }
-  .clientID-wrapper .section-1 img {
-    padding-top: 30px;
+  .clientID-wrapper ::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 53px;
+    color: #bdbdbd;
+    padding-left: 10px !important; }
+  .clientID-wrapper input[type=text] {
+    width: 620px;
+    margin-bottom: 60px;
+    height: 35px; }
+  .clientID-wrapper input[type=submit] {
+    font-family: Montserrat;
+    display: block;
+    width: 70%;
+    background-color: #0198a9;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer; }
+  .clientID-wrapper .section-1 {
+    margin: 0 auto;
+    width: 620px; }
+    .clientID-wrapper .section-1 img {
+      padding-top: 30px;
+      display: block;
+      margin: 0 auto; }
+    .clientID-wrapper .section-1 p {
+      padding: 40px 0px 40px 0px;
+      font-size: 16px;
+      line-height: 53px;
+      color: #0198a9;
+      font-family: Montserrat;
+      font-weight: 700;
+      text-align: center; }
+      .clientID-wrapper .section-1 p a {
+        color: #0198a9;
+        text-decoration: underline; }
+  .clientID-wrapper .timeline {
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex; }
+    .clientID-wrapper .timeline ul li {
+      display: inline-block;
+      position: relative; }
+      .clientID-wrapper .timeline ul li::after {
+        position: absolute;
+        content: "";
+        width: 66px;
+        height: 2px;
+        border-bottom: 2px solid #adadad;
+        top: 24px;
+        right: -65px; }
+      .clientID-wrapper .timeline ul li:last-child::after {
+        display: none; }
+      .clientID-wrapper .timeline ul li:nth-child(1)::after {
+        border-bottom: 2px solid #0197a9; }
+  .clientID-wrapper ul {
     display: block;
     margin: 0 auto; }
-  .clientID-wrapper .section-1 p {
-    padding: 40px 0px 40px 0px;
-    font-size: 16px;
-    line-height: 53px;
-    color: #0198a9;
-    font-family: Montserrat;
-    font-weight: 700;
-    text-align: center; }
-    .clientID-wrapper .section-1 p a {
-      color: #0198a9;
-      text-decoration: underline; }
-
-.clientID-wrapper .timeline {
-  padding-top: 40px;
-  margin: 0 auto;
-  display: flex; }
-  .clientID-wrapper .timeline ul li {
-    display: inline-block;
-    position: relative; }
-    .clientID-wrapper .timeline ul li::after {
-      position: absolute;
-      content: "";
-      width: 66px;
-      height: 2px;
-      border-bottom: 2px solid #adadad;
-      top: 24px;
-      right: -65px; }
-    .clientID-wrapper .timeline ul li:last-child::after {
-      display: none; }
-    .clientID-wrapper .timeline ul li:nth-child(1)::after {
-      border-bottom: 2px solid #0197a9; }
-
-.clientID-wrapper ul {
-  display: block;
-  margin: 0 auto; }
-  .clientID-wrapper ul li {
-    border: 1px solid #adadad;
-    padding: 14px 23px;
-    margin-right: 60px;
-    list-style-type: none;
-    border-radius: 100%;
-    font-family: Montserrat; }
-    .clientID-wrapper ul li:first-child {
-      border: 1px solid #0197a9;
+    .clientID-wrapper ul li {
+      border: 1px solid #adadad;
       padding: 14px 23px;
       margin-right: 60px;
       list-style-type: none;
       border-radius: 100%;
       font-family: Montserrat; }
+      .clientID-wrapper ul li:first-child {
+        border: 1px solid #0197a9;
+        padding: 14px 23px;
+        margin-right: 60px;
+        list-style-type: none;
+        border-radius: 100%;
+        font-family: Montserrat; }
 
-@media screen and (max-width: 600px) {
-  .clientID-wrapper input[type=text] {
-    width: 300px;
-    margin-bottom: 30px; }
-  .clientID-wrapper .form-section {
-    width: 300px;
-    margin: 0 auto; }
-  .clientID-wrapper ul li {
-    padding: 9px 16px; }
-    .clientID-wrapper ul li:first-child {
-      padding: 9px 18px; }
-  .clientID-wrapper .timeline ul li::after {
-    position: absolute;
-    top: 20px;
-    right: -66px; }
-  .clientID-wrapper img.branding {
-    display: none; }
-  .clientID-wrapper img.branding-m {
-    display: block; }
-  .clientID-wrapper label {
-    font-size: 22px;
-    line-height: 53px;
-    font-family: "Roboto", sans-serif;
-    display: initial;
-    margin: 0 auto; } }
+h2, h3, p {
+  font-family: 'Montserrat', sans-serif; }
+
+h3 {
+  font-size: 24px;
+  line-height: 53px;
+  color: #0198a9; }
 
 .form-section {
   width: 620px;
   margin: 0 auto; }
+
+p.required-text {
+  color: #ef952b; }
+
+img.footer-img {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .timeline {
   padding-top: 40px;
@@ -131,7 +112,7 @@
       height: 2px;
       border-bottom: 2px solid #adadad;
       top: 24px;
-      right: -65px; }
+      right: -66px; }
     .timeline ul li:last-child::after {
       display: none; }
     .timeline ul li:nth-child(1)::after {
@@ -157,27 +138,56 @@ ul {
 
 @media screen and (max-width: 600px) {
   input[type=text] {
-    width: 300px;
+    width: 300px !important;
     margin-bottom: 30px; }
   .form-section {
     width: 300px;
     margin: 0 auto; }
+  form {
+    margin: 0 auto;
+    width: fit-content; }
   ul li {
-    padding: 9px 16px; }
+    padding: 8px 16px; }
     ul li:first-child {
-      padding: 9px 18px; }
+      padding: 8px 14px; }
   .timeline ul li::after {
     position: absolute;
-    top: 20px;
-    right: -66px; }
+    content: "";
+    width: 31px;
+    height: 2px;
+    border-bottom: 2px solid #adadad;
+    top: 18px;
+    right: -31px; }
+  .timeline ul li:last-child::after {
+    display: none; }
+  .timeline ul li:nth-child(1)::after {
+    border-bottom: 2px solid #0197a9; }
+  ul {
+    display: block;
+    margin: 0 auto; }
+    ul li {
+      border: 1px solid #adadad;
+      padding: 8px 14px;
+      margin-right: 26px;
+      list-style-type: none;
+      border-radius: 100%;
+      font-family: Montserrat; }
+      ul li:first-child {
+        border: 1px solid #0197a9;
+        padding: 8px 16px;
+        margin-right: 26px;
+        list-style-type: none;
+        border-radius: 100%;
+        font-family: Montserrat; }
   img.branding {
     display: none; }
   img.branding-m {
     display: block; }
   label {
-    font-size: 22px;
+    font-size: 17px;
     line-height: 53px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #67757c !important;
     display: initial;
     margin: 0 auto; } }
 
@@ -194,7 +204,8 @@ ul {
   src: url(assests/fonts/Montserrat/Montserrat-SemiBold.ttf); }
 
 .clinical_Order-wrapper {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 35px; }
   .clinical_Order-wrapper input[type=text] {
     width: 620px;
     margin-bottom: 30px; }
@@ -240,9 +251,6 @@ ul {
   .clinical_Order-wrapper ul {
     display: block;
     margin: 0 auto; }
-  .clinical_Order-wrapper .line {
-    height: 1px;
-    width: 5px; }
   .clinical_Order-wrapper ul li:first-child {
     border: 1px solid #0198a9;
     padding: 14px 23px;
@@ -257,317 +265,173 @@ ul {
   .clinical_Order-wrapper .upload {
     padding: 20px 0px;
     margin: 0 auto; }
-  @media screen and (max-width: 768px) {
-    .clinical_Order-wrapper input[type=text] {
-      width: 300px;
-      margin-bottom: 30px; }
-    .clinical_Order-wrapper .form-section {
-      width: 300px;
-      margin: 0 auto; }
-    .clinical_Order-wrapper ul li {
-      padding: 9px 16px; }
-    .clinical_Order-wrapper ul li:first-child {
-      padding: 9px 18px; }
-    .clinical_Order-wrapper .timeline ul li::after {
-      position: absolute;
-      top: 20px;
-      right: -26px; } }
-
-.confirm_Appointment_wrapper input[type=text] {
-  width: 620px;
-  margin-bottom: 30px; }
-
-.confirm_Appointment_wrapper .btn-primary {
-  width: 70%;
-  display: block;
-  margin: 0 auto;
-  background-color: #0198a9; }
-
-.confirm_Appointment_wrapper .form-section {
-  width: 620px;
-  margin: 0 auto; }
-  .confirm_Appointment_wrapper .form-section img {
-    margin-top: 50px;
-    display: block;
+  .clinical_Order-wrapper .image-upload {
+    display: grid; }
+  .clinical_Order-wrapper .image-upload > input {
+    display: none; }
+  .clinical_Order-wrapper .image-upload img {
     cursor: pointer; }
-  .confirm_Appointment_wrapper .form-section a {
-    display: block;
-    padding-top: 20px; }
-  .confirm_Appointment_wrapper .form-section h3 {
-    font-size: 24px;
-    line-height: 53px;
-    color: #0198a9; }
 
-.confirm_Appointment_wrapper .timeline {
-  padding: 20px 0px 8px 0px;
-  display: flex; }
-  .confirm_Appointment_wrapper .timeline ul li {
-    display: inline-block;
-    position: relative; }
-    .confirm_Appointment_wrapper .timeline ul li::after {
-      position: absolute;
-      content: "";
-      width: 25px;
-      height: 2px;
-      border-bottom: 2px solid #adadad;
-      top: 24px;
-      right: -26px; }
-    .confirm_Appointment_wrapper .timeline ul li:last-child::after {
-      display: none; }
-    .confirm_Appointment_wrapper .timeline ul li:nth-child(1)::after {
-      border-bottom: 2px solid #0198a9; }
-
-.confirm_Appointment_wrapper ul {
-  display: block;
-  margin: 0 auto; }
-  .confirm_Appointment_wrapper ul li {
-    border: 1px solid #adadad;
-    padding: 14px 23px;
-    margin-right: 20px;
-    list-style-type: none;
-    border-radius: 100%;
-    font-family: 'Montserrat', sans-serif; }
-    .confirm_Appointment_wrapper ul li:first-child {
-      border: 1px solid #0198a9;
-      padding: 14px 23px;
-      margin-right: 20px;
-      list-style-type: none;
-      border-radius: 100%;
-      font-family: 'Montserrat', sans-serif; }
-
-.confirm_Appointment_wrapper .line {
-  height: 1px;
-  width: 5px; }
-
-.confirm_Appointment_wrapper p.required-text {
-  color: #ef952b; }
-
-.confirm_Appointment_wrapper .title-section {
-  width: 50%; }
-
-@media screen and (max-width: 768px) {
+.confirm_Appointment_wrapper {
+  margin-top: 35px; }
   .confirm_Appointment_wrapper input[type=text] {
-    width: 300px;
+    width: 620px;
     margin-bottom: 30px; }
-  .confirm_Appointment_wrapper .form-section {
-    width: 300px;
-    margin: 0 auto; }
-  .confirm_Appointment_wrapper ul li {
-    padding: 9px 16px; }
-    .confirm_Appointment_wrapper ul li:first-child {
-      padding: 9px 18px; }
-  .confirm_Appointment_wrapper .timeline ul li::after {
-    position: absolute;
-    top: 20px;
-    right: -26px; }
-  .confirm_Appointment_wrapper .title-section {
-    width: 100%; } }
-
-.Exam-preparation-wrapper .btn-primary {
-  width: 70%;
-  display: block;
-  margin: 0 auto;
-  background-color: #0197a9; }
-
-.Exam-preparation-wrapper .form-section {
-  width: 620px;
-  margin: 0 auto; }
-  .Exam-preparation-wrapper .form-section img {
-    margin-top: 30px;
-    display: block; }
-  .Exam-preparation-wrapper .form-section a {
+  .confirm_Appointment_wrapper .btn-primary {
+    width: 70%;
     display: block;
-    padding-top: 20px; }
-  .Exam-preparation-wrapper .form-section h3 {
-    font-size: 24px;
-    line-height: 53px;
-    color: #67757c; }
-
-.Exam-preparation-wrapper .timeline {
-  padding: 20px 0px 8px 0px;
-  display: flex; }
-  .Exam-preparation-wrapper .timeline ul li {
-    display: inline-block;
-    position: relative; }
-    .Exam-preparation-wrapper .timeline ul li::after {
-      position: absolute;
-      content: "";
-      width: 25px;
-      height: 2px;
-      border-bottom: 2px solid #adadad;
-      top: 24px;
-      right: -26px; }
-    .Exam-preparation-wrapper .timeline ul li:last-child::after {
-      display: none; }
-    .Exam-preparation-wrapper .timeline ul li:nth-child(1)::after {
-      border-bottom: 2px solid #0197a9; }
-
-.Exam-preparation-wrapper ul {
-  display: block;
-  margin: 0 auto; }
-  .Exam-preparation-wrapper ul li {
-    border: 1px solid #adadad;
-    padding: 14px 23px;
-    margin-right: 20px;
-    list-style-type: none;
-    border-radius: 100%;
-    font-family: 'Montserrat', sans-serif; }
-    .Exam-preparation-wrapper ul li:first-child {
-      border: 1px solid #0197a9;
+    margin: 0 auto;
+    background-color: #0198a9; }
+  .confirm_Appointment_wrapper .form-section {
+    width: 620px;
+    margin: 0 auto; }
+    .confirm_Appointment_wrapper .form-section img {
+      margin-top: 50px;
+      display: block;
+      cursor: pointer; }
+    .confirm_Appointment_wrapper .form-section a {
+      display: block;
+      padding-top: 20px;
+      text-decoration: underline; }
+      .confirm_Appointment_wrapper .form-section a hover {
+        color: #0198a9; }
+    .confirm_Appointment_wrapper .form-section h3 {
+      font-size: 24px;
+      line-height: 53px;
+      color: #0198a9; }
+  .confirm_Appointment_wrapper .timeline {
+    padding: 20px 0px 8px 0px;
+    display: flex; }
+    .confirm_Appointment_wrapper .timeline ul li {
+      display: inline-block;
+      position: relative; }
+      .confirm_Appointment_wrapper .timeline ul li::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 2px;
+        border-bottom: 2px solid #adadad;
+        top: 24px;
+        right: -26px; }
+      .confirm_Appointment_wrapper .timeline ul li:last-child::after {
+        display: none; }
+      .confirm_Appointment_wrapper .timeline ul li:nth-child(1)::after {
+        border-bottom: 2px solid #0198a9; }
+  .confirm_Appointment_wrapper ul {
+    display: block;
+    margin: 0 auto; }
+    .confirm_Appointment_wrapper ul li {
+      border: 1px solid #adadad;
       padding: 14px 23px;
       margin-right: 20px;
       list-style-type: none;
       border-radius: 100%;
       font-family: 'Montserrat', sans-serif; }
+      .confirm_Appointment_wrapper ul li:first-child {
+        border: 1px solid #0198a9;
+        padding: 14px 23px;
+        margin-right: 20px;
+        list-style-type: none;
+        border-radius: 100%;
+        font-family: 'Montserrat', sans-serif; }
+  .confirm_Appointment_wrapper .title-section {
+    width: 50%; }
+  @media screen and (max-width: 768px) {
+    .confirm_Appointment_wrapper .title-section {
+      width: 100%;
+      padding-left: 30px; }
+    .confirm_Appointment_wrapper label {
+      font-size: 17px;
+      line-height: 53px;
+      font-family: "Roboto", sans-serif;
+      color: #67757c !important;
+      margin: 0 auto; } }
 
-.Exam-preparation-wrapper .line {
-  height: 1px;
-  width: 5px; }
-
-.Exam-preparation-wrapper .examination-section {
-  padding: 20px;
-  border: 1px solid #67757c;
-  background: #fafafa;
-  border-radius: 3px;
-  margin-bottom: 20px; }
-
-@media screen and (max-width: 768px) {
-  .Exam-preparation-wrapper input[type=text] {
-    width: 300px;
-    margin-bottom: 30px; }
+.Exam-preparation-wrapper {
+  margin-top: 35px;
+  font-family: 'Montserrat', sans-serif; }
+  .Exam-preparation-wrapper .btn-primary {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    background-color: #0197a9; }
   .Exam-preparation-wrapper .form-section {
-    width: 300px;
+    width: 620px;
     margin: 0 auto; }
+    .Exam-preparation-wrapper .form-section img {
+      margin-top: 30px;
+      display: block; }
+    .Exam-preparation-wrapper .form-section a {
+      display: block;
+      padding-top: 20px; }
+    .Exam-preparation-wrapper .form-section h3 {
+      font-size: 24px;
+      line-height: 53px;
+      color: #67757c;
+      margin-left: 18px; }
+    .Exam-preparation-wrapper .form-section h4 {
+      font-size: 17px;
+      line-height: 53px;
+      color: #67757c;
+      margin-bottom: 0px; }
+  .Exam-preparation-wrapper .examination-section {
+    padding: 10px 15px;
+    border: 1px solid #67757c;
+    background: #fafafa;
+    border-radius: 3px;
+    margin: 0px 15px 20px 15px; }
+  @media screen and (max-width: 600px) {
     .Exam-preparation-wrapper .form-section h3 {
       font-size: 17px;
-      line-height: 28px;
-      color: #67757c; }
-  .Exam-preparation-wrapper ul li {
-    padding: 9px 16px; }
-    .Exam-preparation-wrapper ul li:first-child {
-      padding: 9px 18px; }
-  .Exam-preparation-wrapper .timeline ul li::after {
-    position: absolute;
-    top: 20px;
-    right: -26px; }
-  .Exam-preparation-wrapper .title-section {
-    width: 100%; } }
+      line-height: 53px;
+      color: #67757c;
+      margin-left: 18px;
+      margin-bottom: 0px;
+      font-weight: 400; }
+    .Exam-preparation-wrapper h4 {
+      font-size: 14px;
+      line-height: 53px;
+      color: #67757c; } }
 
-.search-results-wrapper p {
-  margin-bottom: 5px !important; }
-
-.search-results-wrapper .info-icon-section i {
-  color: #0198a9; }
-
-.search-results-wrapper span {
-  color: #0198a9; }
-
-.search-results-wrapper input[type=text] {
-  width: 620px;
-  margin-bottom: 20px; }
-
-.search-results-wrapper .btn-primary {
-  width: 110px;
-  height: 35px;
-  background-color: #0198a9; }
-
-.search-results-wrapper .form-section {
-  width: 620px;
-  margin: 0 auto; }
-  .search-results-wrapper .form-section a {
-    display: block;
-    padding-top: 20px; }
-
-.search-results-wrapper .timeline {
-  padding: 20px 0px 15px 0px;
-  display: flex; }
-  .search-results-wrapper .timeline ul li {
-    display: inline-block;
-    position: relative; }
-    .search-results-wrapper .timeline ul li::after {
-      position: absolute;
-      content: "";
-      width: 25px;
-      height: 2px;
-      border-bottom: 2px solid #adadad;
-      top: 24px;
-      right: -26px; }
-    .search-results-wrapper .timeline ul li:last-child::after {
-      display: none; }
-    .search-results-wrapper .timeline ul li:nth-child(1)::after {
-      border-bottom: 2px solid #0198a9; }
-
-.search-results-wrapper ul {
-  display: block;
-  margin: 0 auto; }
-  .search-results-wrapper ul li {
-    border: 1px solid #adadad;
-    padding: 14px 23px;
-    margin-right: 20px;
-    list-style-type: none;
-    border-radius: 100%;
-    font-family: 'Montserrat', sans-serif; }
-    .search-results-wrapper ul li:first-child {
-      border: 1px solid #0198a9;
-      padding: 14px 23px;
-      margin-right: 20px;
-      list-style-type: none;
-      border-radius: 100%;
-      font-family: 'Montserrat', sans-serif; }
-
-.search-results-wrapper .line {
-  height: 1px;
-  width: 5px; }
-
-.search-results-wrapper p.required-text {
-  color: #ef952b; }
-
-.search-results-wrapper .upload {
-  padding: 20px 0px;
-  margin: 0 auto; }
-
-.search-results-wrapper .clear-fix {
-  overflow: auto; }
-
-.search-results-wrapper .info-wrapper {
-  padding: 20px;
-  margin-top: 30px;
-  border: 1px solid #ef952b;
-  background-color: #fafafa;
-  overflow: auto; }
-
-.search-results-wrapper .info {
-  overflow: auto; }
-
-.search-results-wrapper p.info-title {
-  font-weight: 700; }
-
-.search-results-wrapper img.branding-m {
-  display: none; }
-
-@media screen and (max-width: 768px) {
+.search-results-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 35px; }
+  .search-results-wrapper p {
+    margin-bottom: 5px !important; }
+  .search-results-wrapper .info-icon-section i {
+    color: #0198a9; }
+  .search-results-wrapper span {
+    color: #0198a9; }
   .search-results-wrapper input[type=text] {
-    width: 300px;
-    margin-bottom: 30px; }
+    width: 620px;
+    margin-bottom: 20px; }
+  .search-results-wrapper .btn-primary {
+    width: 110px;
+    height: 35px;
+    background-color: #0198a9; }
   .search-results-wrapper .form-section {
-    width: 300px;
+    width: 620px;
     margin: 0 auto; }
-  .search-results-wrapper .info-text {
-    width: 60%; }
-  .search-results-wrapper .inner-info {
-    width: 40%; }
-  .search-results-wrapper ul li {
-    padding: 9px 16px; }
-    .search-results-wrapper ul li:first-child {
-      padding: 9px 18px; }
-  .search-results-wrapper .timeline ul li::after {
-    position: absolute;
-    top: 20px;
-    right: -26px; }
-  .search-results-wrapper img.branding {
-    display: none; }
-  .search-results-wrapper img.branding-m {
-    display: block; } }
+    .search-results-wrapper .form-section a {
+      display: block;
+      padding-top: 20px; }
+  .search-results-wrapper p.required-text {
+    color: #ef952b; }
+  .search-results-wrapper .upload {
+    padding: 20px 0px;
+    margin: 0 auto; }
+  .search-results-wrapper .clear-fix {
+    overflow: auto; }
+  .search-results-wrapper .info-wrapper {
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #ef952b;
+    background-color: #fafafa;
+    overflow: auto; }
+  .search-results-wrapper .info {
+    overflow: auto; }
+  .search-results-wrapper p.info-title {
+    font-weight: 700; }
 
 .ClientID-Advanced {
   font-family: 'Montserrat', sans-serif; }
@@ -599,4 +463,111 @@ ul {
       margin-bottom: 30px; }
     .ClientID-Advanced .form-section {
       width: 300px;
+      margin: 0 auto; } }
+
+.confirm_Appointment_FromEmail .form-section {
+  width: 620px;
+  margin: 0 auto;
+  text-align: center; }
+
+.confirm_Appointment_FromEmail .title-section {
+  margin: 0 auto;
+  display: block; }
+  .confirm_Appointment_FromEmail .title-section h2 {
+    font-size: 20px;
+    color: #67757c;
+    margin: 50px 0px; }
+  .confirm_Appointment_FromEmail .title-section p {
+    margin-bottom: 50px; }
+
+.confirm_Appointment_FromEmail .btn-primary {
+  width: 50%;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #0198a9; }
+
+.confirm_Appointment_FromEmail .btn-warning {
+  width: 50%;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ef952b;
+  color: #fff; }
+
+@media screen and (max-width: 600px) {
+  .confirm_Appointment_FromEmail .title-section {
+    width: 260px; }
+  .confirm_Appointment_FromEmail .btn-primary {
+    width: 260px; }
+  .confirm_Appointment_FromEmail .btn-warning {
+    width: 260px; }
+  .confirm_Appointment_FromEmail h2 {
+    font-size: 20px;
+    line-height: 20px; }
+  .confirm_Appointment_FromEmail h3 {
+    font-size: 17px;
+    line-height: 16px; }
+  .confirm_Appointment_FromEmail p {
+    font-size: 12px;
+    line-height: 16px; }
+  .confirm_Appointment_FromEmail .form-section {
+    width: 620px;
+    margin: 0 auto;
+    text-align: left; } }
+
+.confirm_Appointment_FromEmaillink-Cancelled {
+  color: #67757c; }
+  .confirm_Appointment_FromEmaillink-Cancelled .form-section {
+    width: 620px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .confirm_Appointment_FromEmaillink-Cancelled h2 {
+    font-size: 22px;
+    color: #67757c;
+    margin: 100px 0px 100px 0px; }
+  .confirm_Appointment_FromEmaillink-Cancelled a {
+    color: #ef952b; }
+  .confirm_Appointment_FromEmaillink-Cancelled p {
+    font-size: 20px;
+    line-height: 18px; }
+  @media screen and (max-width: 600px) {
+    .confirm_Appointment_FromEmaillink-Cancelled h2 {
+      font-size: 20px;
+      line-height: 20px; }
+    .confirm_Appointment_FromEmaillink-Cancelled p {
+      font-size: 17px;
+      line-height: 18px; }
+    .confirm_Appointment_FromEmaillink-Cancelled .form-section {
+      width: 620px;
+      margin: 0 auto; } }
+
+.confirm_Appointment_FromEmaillink-Confirmed {
+  color: #67757c; }
+  .confirm_Appointment_FromEmaillink-Confirmed .form-section {
+    width: 620px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .confirm_Appointment_FromEmaillink-Confirmed h2 {
+    font-size: 22px;
+    color: #67757c;
+    margin: 100px 0px 100px 0px; }
+  .confirm_Appointment_FromEmaillink-Confirmed a {
+    color: #ef952b; }
+  .confirm_Appointment_FromEmaillink-Confirmed p {
+    font-size: 20px;
+    line-height: 18px; }
+  @media screen and (max-width: 600px) {
+    .confirm_Appointment_FromEmaillink-Confirmed h2 {
+      font-size: 20px;
+      line-height: 20px; }
+    .confirm_Appointment_FromEmaillink-Confirmed p {
+      font-size: 17px;
+      line-height: 18px; }
+    .confirm_Appointment_FromEmaillink-Confirmed .form-section {
+      width: 620px;
       margin: 0 auto; } }
