@@ -1,16 +1,15 @@
 .confirm_Appointment_wrapper{
 
-	margin-top: 35px;
+	margin-top: 50px;
 
+
+input[type=email] {
+	width: 620px;
+	margin-bottom: 77px;
+}
 input[type=text] {
 	width: 620px;
-	margin-bottom: 30px;
-}
-.btn-primary {
-	width: 70%;
-	display: block;
-	margin: 0 auto;
-	background-color: $bluecolor;
+	margin-bottom: 28px;
 }
 .form-section {
 	width: 620px;
@@ -32,16 +31,26 @@ input[type=text] {
 		font-size: 24px;
 		line-height: 53px;
 		color: $bluecolor;
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
 	}
 }
 
 .title-section {
 	width: 50%;
+
+	p{
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: $greycolor;
+	margin-bottom: 63px;
+	}
 }
 
 	@media screen and (max-width:768px) {
 		.title-section {
-			width: 100%;
+			width: 620px;
 			padding-left: 30px;
 		}
 		
@@ -52,6 +61,17 @@ input[type=text] {
 			color: #67757c !important;
 			margin: 0 auto;
 		  }
+		  input[type=email] {
+			width: 100%;
+			margin-left:0px;
+			margin-right:0px;
+		}
+		input[type=text] {
+			width: 100%;
+			margin-left:0px;
+			margin-right:0px;
+		}
+			
 	}
 
 }

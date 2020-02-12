@@ -11,6 +11,8 @@
   .clientID-wrapper .section-1 {
     margin: 0 auto;
     width: 620px; }
+    .clientID-wrapper .section-1 input {
+      width: 100%; }
     .clientID-wrapper .section-1 img {
       padding-top: 30px;
       display: block;
@@ -26,9 +28,12 @@
       .clientID-wrapper .section-1 p a {
         color: #0197a9;
         text-decoration: underline; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .clientID-wrapper {
-      margin-top: 83px; } }
+      margin-top: 83px; }
+      .clientID-wrapper .section-1 {
+        padding: 30px;
+        width: 100%; } }
 
 h2, h3, p {
   font-family: 'Montserrat', sans-serif; }
@@ -85,7 +90,7 @@ input[type=submit] {
   cursor: pointer; }
 
 input[type=text] {
-  width: 620px;
+  width: 100%;
   margin-bottom: 160px;
   height: 35px; }
 
@@ -140,9 +145,14 @@ ul {
       border-radius: 100%;
       font-family: 'Montserrat', sans-serif; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   input[type=text] {
-    width: 260px !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: block; }
+  input[type=email] {
+    width: 100% !important;
     margin-bottom: 20px;
     margin: 0 auto;
     display: block; }
@@ -284,15 +294,13 @@ ul {
         width: 39px; } }
 
 .confirm_Appointment_wrapper {
-  margin-top: 35px; }
+  margin-top: 50px; }
+  .confirm_Appointment_wrapper input[type=email] {
+    width: 620px;
+    margin-bottom: 77px; }
   .confirm_Appointment_wrapper input[type=text] {
     width: 620px;
-    margin-bottom: 30px; }
-  .confirm_Appointment_wrapper .btn-primary {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    background-color: #0197a9; }
+    margin-bottom: 28px; }
   .confirm_Appointment_wrapper .form-section {
     width: 620px;
     margin: 0 auto; }
@@ -309,19 +317,35 @@ ul {
     .confirm_Appointment_wrapper .form-section h3 {
       font-size: 24px;
       line-height: 53px;
-      color: #0197a9; }
+      color: #0197a9;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400; }
   .confirm_Appointment_wrapper .title-section {
     width: 50%; }
+    .confirm_Appointment_wrapper .title-section p {
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: #67757c;
+      margin-bottom: 63px; }
   @media screen and (max-width: 768px) {
     .confirm_Appointment_wrapper .title-section {
-      width: 100%;
+      width: 620px;
       padding-left: 30px; }
     .confirm_Appointment_wrapper label {
       font-size: 17px;
       line-height: 53px;
       font-family: "Roboto", sans-serif;
       color: #67757c !important;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+    .confirm_Appointment_wrapper input[type=email] {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px; }
+    .confirm_Appointment_wrapper input[type=text] {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px; } }
 
 .Exam-preparation-wrapper {
   margin-top: 36px;
@@ -516,10 +540,8 @@ ul {
   .confirm_Appointment_FromEmaillink-Cancelled .image {
     position: fixed;
     bottom: 15px;
-    margin: 0 auto;
-    width: 100%;
-    transform: translateX(-35%); }
-  @media screen and (max-width: 600px) {
+    transform: translateX(26%); }
+  @media screen and (max-width: 768px) {
     .confirm_Appointment_FromEmaillink-Cancelled h2 {
       font-size: 20px;
       line-height: 20px; }
@@ -529,8 +551,15 @@ ul {
     .confirm_Appointment_FromEmaillink-Cancelled .form-section {
       width: 620px;
       margin: 0 auto; }
-    .confirm_Appointment_FromEmaillink-Cancelled img.img-fluid {
-      transform: translate(39%); } }
+    .confirm_Appointment_FromEmaillink-Cancelled .image {
+      position: fixed;
+      bottom: 15px;
+      transform: translateX(19%); } }
+  @media (min-width: 320px) and (max-width: 425px) {
+    .confirm_Appointment_FromEmaillink-Cancelled .image {
+      position: fixed;
+      bottom: 15px;
+      transform: translateX(22%); } }
 
 .confirm_Appointment_FromEmaillink-Confirmed {
   color: #67757c; }

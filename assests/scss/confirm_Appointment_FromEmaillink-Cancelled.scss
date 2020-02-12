@@ -25,12 +25,10 @@
     .image{
       position: fixed;
       bottom: 15px;
-      margin: 0 auto;
-      width: 100%;
-      transform: translateX(-35%);
-    }
+      transform: translateX(26%);
+     }
 
-      @media screen and (max-width:600px) {
+      @media screen and (max-width:768px) {
         h2{
             font-size: 20px;
             line-height: 20px;
@@ -44,8 +42,17 @@
             width: 620px;
             margin: 0 auto;
         }
-        img.img-fluid {
-          transform: translate(39%);
-      }
+        .image{
+          position: fixed;
+          bottom: 15px;
+          transform: translateX(19%);
+         }
+     }
+     @media (min-width:320px) and (max-width:425px) {
+      .image{
+        position: fixed;
+        bottom: 15px;
+        transform: translateX(22%);
+       }
      }
 }
