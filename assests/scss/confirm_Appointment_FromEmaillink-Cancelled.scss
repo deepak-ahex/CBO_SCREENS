@@ -13,7 +13,7 @@
       h2 {
         font-size: 22px;
         color: $greycolor;
-        margin: 100px 0px 100px 0px;
+        margin: 110px 0px 102px 0px;
       }
       a{
           color: $orangecolor;
@@ -21,6 +21,13 @@
       p{
         font-size: 20px;
         line-height: 18px;   
+    }
+    .image{
+      position: fixed;
+      bottom: 15px;
+      margin: 0 auto;
+      width: 100%;
+      transform: translateX(-35%);
     }
 
       @media screen and (max-width:600px) {
@@ -37,5 +44,8 @@
             width: 620px;
             margin: 0 auto;
         }
+        img.img-fluid {
+          transform: translate(39%);
+      }
      }
 }

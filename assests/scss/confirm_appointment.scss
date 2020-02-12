@@ -34,55 +34,7 @@ input[type=text] {
 		color: $bluecolor;
 	}
 }
-.timeline {
-	padding: 20px 0px 8px 0px;
-	display: flex;
-	ul {
-		li {
-			display: inline-block;
-			position: relative;
-			&::after {
-				position: absolute;
-				content: "";
-				width: 25px;
-				height: 2px;
-				border-bottom: 2px solid #adadad;
-				top: 24px;
-				right: -26px;
-			}
-			&:last-child {
-				&::after {
-					display: none;
-				}
-			}
-			&:nth-child(1) {
-				&::after {
-					border-bottom: 2px solid $bluecolor;
-				}
-			}
-		}
-	}
-}
-ul {
-	li {
-		border: 1px solid #adadad;
-		padding: 14px 23px;
-		margin-right: 20px;
-		list-style-type: none;
-		border-radius: 100%;
-		font-family: 'Montserrat', sans-serif;
-		&:first-child {
-			border: 1px solid $bluecolor;
-			padding: 14px 23px;
-			margin-right: 20px;
-			list-style-type: none;
-			border-radius: 100%;
-			font-family: 'Montserrat', sans-serif;
-		}
-	}
-	display: block;
-	margin: 0 auto;
-}
+
 .title-section {
 	width: 50%;
 }

@@ -2,81 +2,33 @@
 .clinical_Order-wrapper{
 
 	font-family: 'Montserrat', sans-serif;
-	margin-top: 35px;
+	margin-top: 45px;
 
 input[type=text] {
 	width: 620px;
 	margin-bottom: 30px;
 }
-.btn-primary {
-	width: 70%;
-	display: block;
-    margin: 0 auto;
-    background-color: $bluecolor;
-}
 .form-section {
-	width: 620px;
+	width: 670px;
 	margin: 0 auto;
-}
-
-.form-section img {
-    margin-top: 40px;
-    margin: 0 auto;
-    display: block;
-    cursor: pointer;
 }
 
 .form-section a{
     display: block;
-    padding-top: 20px;
-}
-.timeline {
-	padding: 20px 0px 8px 0px;
-    display: flex;
+    padding-top: 33px;
+    padding-bottom: 28px;
 }
 
-ul li {
-	border: 1px solid #adadad;
-	padding: 14px 23px;
-	margin-right: 20px;
-	list-style-type: none;
-	border-radius: 100%;
-	font-family: 'Montserrat', sans-serif;;
-}
-
-.timeline ul li {
-	display: inline-block;
-	position: relative;
-}
-.timeline ul li::after {
-	position: absolute;
-	content: "";
-	width: 25px;
-	height: 2px;
-	border-bottom: 2px solid #adadad;
-	top: 24px;
-	right: -26px;
-}
-.timeline ul li:last-child::after {
-	display: none;
-}
-ul {
-	display: block;
-	margin: 0 auto;
-}
-ul li:first-child {
-	border: 1px solid $bluecolor;
-	padding: 14px 23px;
-	margin-right: 20px;
-	list-style-type: none;
-	border-radius: 100%;
-	font-family: 'Montserrat', sans-serif;;
-}
-.timeline ul li:nth-child(1)::after {
-	border-bottom: 2px solid $bluecolor;
-}
 p.required-text{
     color:$orangecolor;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 17px;
+}
+p.normal-text{
+    font-size: 22px;
+    line-height: 53px;
+    color: $greycolor;
 }
 .upload{
     padding: 20px 0px;
@@ -93,6 +45,35 @@ p.required-text{
 .image-upload img
 {
     cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+
+    margin-top: 12px;
+
+    p.required-text{
+        color:$orangecolor;
+        margin-bottom: 15px;
+        font-size: 17px;
+        line-height: 17px;
+    }
+    p.normal-text{
+        font-size: 17px;
+        line-height: 53px;
+        color: $greycolor;
+    }
+    .form-section {
+        width: 260px;
+        margin: 0 auto;
+    }
+    form{
+        width: 260px;
+    }
+    image {
+        height: 160px;
+        width: 39px;
+    }
 }
 
 }

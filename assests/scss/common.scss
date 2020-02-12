@@ -2,12 +2,25 @@
 h2,h3,p{
 	font-family: 'Montserrat', sans-serif;
 }
+a{
+	text-decoration: underline;
+	&:hover{
+		color: $bluecolor;
+	}
+}
 h3 {
 	font-size: 24px;
 	line-height: 53px;
 	color: $bluecolor;
 }
-
+::-webkit-input-placeholder { 
+    font-size: 15px;
+    line-height: 53px;
+    color: #bdbdbd;
+	padding-left: 10px !important;
+	font-family: 'Montserrat', sans-serif;
+  }
+  
 .form-section {
 	width: 620px;
 	margin: 0 auto;
@@ -17,12 +30,63 @@ p.required-text{
     color:$orangecolor;
 }
 
-img.footer-img{
-	position: fixed;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+.form-section img {
+    margin-top: 40px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
 }
+
+label{
+	font-size: 24px;
+    line-height: 53px;
+    color: $greycolor;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+input[type=submit] {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 350px;
+    background-color:$bluecolor;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border: none;
+	border-radius:3px;
+	margin-bottom:10px;
+    cursor: pointer;
+  }
+  input[type=text]{
+    width: 620px;
+    margin-bottom: 160px;
+    height: 35px;
+}
+//focus
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus,button:focus,button:active,button:hover,label:focus,.btn:active,.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+//button-css
+
+.btn-primary {
+	width:350px;
+	display: block;
+    margin: 0 auto;
+    background: $bluecolor !important;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $bluecolor !important;
+    }
+}	
+
+
 //form navigation timeline
 .timeline {
 	padding-top: 40px;
@@ -36,11 +100,11 @@ img.footer-img{
 			&::after {
 				position: absolute;
 				content: "";
-				width: 66px;
+				width: 107px;
 				height: 2px;
-				border-bottom: 2px solid #adadad;
+				border-bottom: 2px solid $greycolor;
 				top: 24px;
-				right: -66px;
+				right: -107px;
 			}
 			&:last-child {
 				&::after {
@@ -49,7 +113,7 @@ img.footer-img{
 			}
 			&:nth-child(1) {
 				&::after {
-					border-bottom: 2px solid #0197a9;
+					border-bottom: 2px solid $bluecolor;
 				}
 			}
 		}
@@ -57,29 +121,56 @@ img.footer-img{
 }
 ul {
 	li {
-		border: 1px solid #adadad;
+		border: 1px solid $greycolor;
 		padding: 14px 23px;
-		margin-right: 60px;
+		margin-right: 100px;
 		list-style-type: none;
 		border-radius: 100%;
-		font-family:Montserrat;
+		font-family: 'Montserrat', sans-serif;
 		&:first-child {
-			border: 1px solid #0197a9;
+			border: 1px solid $bluecolor;
 			padding: 14px 23px;
-			margin-right: 60px;
+			margin-right: 100px;
 			list-style-type: none;
 			border-radius: 100%;
-			font-family:Montserrat;
+			font-family: 'Montserrat', sans-serif;
 		}
 	}
 	display: block;
 	margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
+
 	input[type=text] {
-	  width: 300px !important;
-	  margin-bottom: 30px;
+	  width: 260px !important;
+	  margin-bottom: 20px;
+	  margin: 0 auto;
+	  display: block;
 	}
+	.btn-primary {
+		width:260px;
+		display: block;
+		margin: 0 auto;
+		background: $bluecolor !important;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $bluecolor !important;
+		}
+	}
+	input[type=submit] {
+		font-family: 'Montserrat', sans-serif;
+		display: block;
+		width: 260px;
+		background-color:$bluecolor;
+		color: white;
+		padding: 8px 20px;
+		margin: 0 auto;
+		border: none;
+		border-radius:3px;
+		margin-top:30px;
+		cursor: pointer;
+	  }
   
 	.form-section {
 	  width: 300px;
@@ -104,7 +195,7 @@ ul {
 		content: "";
 		width: 31px;
 		height: 2px;
-		border-bottom: 2px solid #adadad;
+		border-bottom: 2px solid $greycolor;
 		top: 18px;
 		right: -31px;
 	  }
@@ -114,7 +205,7 @@ ul {
 	  }
   
 	  &:nth-child(1)::after {
-		border-bottom: 2px solid #0197a9;
+		border-bottom: 2px solid $bluecolor;
 	  }
 	}
   
@@ -123,7 +214,7 @@ ul {
 	  margin: 0 auto;
   
 	  li {
-		border: 1px solid #adadad;
+		border: 1px solid $greycolor;
 		padding: 8px 14px;
 		margin-right: 26px;
 		list-style-type: none;
@@ -131,12 +222,12 @@ ul {
 		font-family: Montserrat;
   
 		&:first-child {
-		  border: 1px solid #0197a9;
+		  border: 1px solid $bluecolor;
 		  padding: 8px 16px;
 		  margin-right: 26px;
 		  list-style-type: none;
 		  border-radius: 100%;
-		  font-family: Montserrat;
+		  font-family: 'Montserrat', sans-serif;
 		}
 	  }
 	}
@@ -154,9 +245,13 @@ ul {
 	label {
 	  font-size: 17px;
 	  line-height: 53px;
-	  font-family: 'Montserrat', sans-serif;
-	  color: #67757c !important;
+	  font-family: 'Roboto', sans-serif;
+	  color: $greycolor !important;
 	  display: initial;
 	  margin: 0 auto;
 	}
+	image {
+        height: 160px;
+        width: 39px;
+    }
   }

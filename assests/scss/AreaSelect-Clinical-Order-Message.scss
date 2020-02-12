@@ -1,0 +1,43 @@
+.clinical-order-Message {
+  margin-top: 50px;
+
+  .section-1 {
+    margin: 0 auto;
+    width: 620px;
+
+    img {
+      padding-top: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+    p.Identification {
+      padding: 40px 0px 0px 0px;
+      font-size: 16px;
+      line-height: 53px;
+      color: $bluecolor;
+      font-family: Montserrat;
+      font-weight: 700;
+      text-align: center;
+
+      a {
+        color: $bluecolor;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p.details {
+    font-size: 17px;
+    line-height: 17px;
+    color: $greycolor;
+    text-align: center;
+  }
+  p.contact-text {
+    font-size: 17px;
+    line-height: 17px;
+    color: $orangecolor;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+  }
+}

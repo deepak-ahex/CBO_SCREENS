@@ -1,14 +1,8 @@
 
 .Exam-preparation-wrapper{
-	margin-top: 35px;
+	margin-top: 36px;
 	font-family: 'Montserrat', sans-serif;
 	
-.btn-primary {
-	width: 70%;
-	display: block;
-	margin: 0 auto;
-	background-color: #0197a9;
-}
 .form-section {
 	width: 620px;
 	margin: 0 auto;
@@ -21,42 +15,55 @@
 		padding-top: 20px;
 	}
 	h3 {
+		font-family: 'Roboto', sans-serif;
 		font-size: 24px;
 		line-height: 53px;
-		color: #67757c;
+		color: $greycolor;
 		margin-left: 18px;
+		font-weight: 400;
 	}
 	h4{
-		font-size: 17px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 22px;
 		line-height: 53px;
-		color: #67757c;
+		color: $greycolor;
 		margin-bottom: 0px;
+		font-weight: 400;
+	}
+	p{
+		font-size: 20px;
+	}
+	.btn-primary{
+		margin-bottom: 32px;
 	}
 }
-
 .examination-section {
 	padding: 10px 15px;
-	border: 1px solid #67757c;
+	border: 1px solid $greycolor;
 	background: #fafafa;
 	border-radius: 3px;
-	margin: 0px 15px 20px 15px;
+	margin: 0px 15px 60px 15px;
 }
 @media screen and (max-width: 600px) {
 	.form-section{
 		h3 {
 			font-size: 17px;
 			line-height: 53px;
-			color: #67757c;
-			margin-left: 18px;
-			margin-bottom: 0px;
+			color: $greycolor;
 			font-weight: 400;
 		}
+		h4{
+			font-size: 14px;
+			line-height: 53px;
+			color: $greycolor;
+		}
+		p{
+			font-size: 12px;
+			letter-spacing: 0px;
+			line-height: 16px;
+		}
 	}
-h4{
-	font-size: 14px;
-	line-height: 53px;
-	color: #67757c;
-}
+
 
 }
 
