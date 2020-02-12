@@ -52,12 +52,18 @@ h3 {
   font-size: 15px;
   line-height: 53px;
   color: #bdbdbd;
-  padding-left: 10px !important;
+  padding-left: 5px !important;
   font-family: 'Montserrat', sans-serif; }
+
+.content-section {
+  width: 50%; }
 
 .form-section {
   width: 620px;
   margin: 0 auto; }
+
+p {
+  color: #67757c; }
 
 p.required-text {
   color: #ef952b; }
@@ -108,7 +114,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     background-color: #0197a9 !important; }
 
 .timeline {
-  padding-top: 40px;
+  padding-top: 52px;
   margin: 0 auto;
   display: flex; }
   .timeline ul li {
@@ -176,11 +182,8 @@ ul {
     margin-top: 30px;
     cursor: pointer; }
   .form-section {
-    width: 300px;
-    margin: 0 auto; }
-  form {
-    margin: 0 auto;
-    width: fit-content; }
+    width: 100%;
+    padding: 1px 30px; }
   ul li {
     padding: 8px 16px; }
     ul li:first-child {
@@ -227,7 +230,9 @@ ul {
     margin: 0 auto; }
   image {
     height: 160px;
-    width: 39px; } }
+    width: 39px; }
+  .content-section {
+    width: 100%; } }
 
 @font-face {
   font-family: Montserrat-bold;
@@ -284,11 +289,6 @@ ul {
         font-size: 17px;
         line-height: 53px;
         color: #67757c; }
-      .clinical_Order-wrapper .form-section {
-        width: 260px;
-        margin: 0 auto; }
-      .clinical_Order-wrapper form {
-        width: 260px; }
       .clinical_Order-wrapper image {
         height: 160px;
         width: 39px; } }
@@ -296,10 +296,10 @@ ul {
 .confirm_Appointment_wrapper {
   margin-top: 50px; }
   .confirm_Appointment_wrapper input[type=email] {
-    width: 620px;
+    width: 100%;
     margin-bottom: 77px; }
   .confirm_Appointment_wrapper input[type=text] {
-    width: 620px;
+    width: 100%;
     margin-bottom: 28px; }
   .confirm_Appointment_wrapper .form-section {
     width: 620px;
@@ -329,9 +329,6 @@ ul {
       color: #67757c;
       margin-bottom: 63px; }
   @media screen and (max-width: 768px) {
-    .confirm_Appointment_wrapper .title-section {
-      width: 620px;
-      padding-left: 30px; }
     .confirm_Appointment_wrapper label {
       font-size: 17px;
       line-height: 53px;
@@ -400,7 +397,7 @@ ul {
 
 .search-results-wrapper {
   font-family: 'Montserrat', sans-serif;
-  margin-top: 35px; }
+  margin-top: 27px; }
   .search-results-wrapper p {
     margin-bottom: 5px !important; }
   .search-results-wrapper .info-icon-section i {
@@ -409,7 +406,7 @@ ul {
     color: #0197a9; }
   .search-results-wrapper input[type=text] {
     width: 620px;
-    margin-bottom: 20px; }
+    margin-bottom: 28px; }
   .search-results-wrapper .btn-primary {
     width: 110px;
     height: 35px;
@@ -419,7 +416,10 @@ ul {
     margin: 0 auto; }
     .search-results-wrapper .form-section a {
       display: block;
-      padding-top: 20px; }
+      padding-top: 20px;
+      margin-bottom: 30px; }
+  .search-results-wrapper select#sel1 {
+    margin-bottom: 39px; }
   .search-results-wrapper p.required-text {
     color: #ef952b; }
   .search-results-wrapper .upload {
@@ -429,7 +429,7 @@ ul {
     overflow: auto; }
   .search-results-wrapper .info-wrapper {
     padding: 20px;
-    margin-top: 30px;
+    margin-bottom: 73px;
     border: 1px solid #ef952b;
     background-color: #fafafa;
     overflow: auto; }
@@ -437,6 +437,9 @@ ul {
     overflow: auto; }
   .search-results-wrapper p.info-title {
     font-weight: 700; }
+  @media screen and (max-width: 768) {
+    .search-results-wrapper .info-text.float-left {
+      width: 65%; } }
 
 .ClientID-Advanced {
   font-family: 'Montserrat', sans-serif; }

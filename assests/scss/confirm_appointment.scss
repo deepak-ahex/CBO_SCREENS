@@ -4,11 +4,11 @@
 
 
 input[type=email] {
-	width: 620px;
+	width: 100%;
 	margin-bottom: 77px;
 }
 input[type=text] {
-	width: 620px;
+	width: 100%;
 	margin-bottom: 28px;
 }
 .form-section {
@@ -49,11 +49,7 @@ input[type=text] {
 }
 
 	@media screen and (max-width:768px) {
-		.title-section {
-			width: 620px;
-			padding-left: 30px;
-		}
-		
+
 		label {
 			font-size: 17px;
 			line-height: 53px;
@@ -72,6 +68,10 @@ input[type=text] {
 			margin-right:0px;
 		}
 			
+	}
+
+	@media screen and (max-width:425px) {
+		
 	}
 
 }

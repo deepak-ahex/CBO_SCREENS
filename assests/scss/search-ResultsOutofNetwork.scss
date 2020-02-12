@@ -1,7 +1,7 @@
 .search-results-wrapper{
 
 	font-family: 'Montserrat', sans-serif;
-	margin-top: 35px;
+	margin-top: 27px;
 
 p {
 	margin-bottom: 5px !important;
@@ -16,7 +16,7 @@ span {
 }
 input[type=text] {
 	width: 620px;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 }
 .btn-primary {
 	width: 110px;
@@ -29,9 +29,12 @@ input[type=text] {
 	a {
 		display: block;
 		padding-top: 20px;
+		margin-bottom: 30px;
 	}
 }
-
+select#sel1 {
+    margin-bottom: 39px;
+}
 
 p.required-text {
 	color: $orangecolor;
@@ -45,7 +48,7 @@ p.required-text {
 }
 .info-wrapper {
 	padding: 20px;
-	margin-top: 30px;
+	margin-bottom: 73px;
 	border: 1px solid $orangecolor;
 	background-color: #fafafa;
 	overflow: auto;
@@ -55,6 +58,12 @@ p.required-text {
 }
 p.info-title {
 	font-weight: 700;
+}
+
+@media screen and (max-width:768) {
+	.info-text.float-left {
+		width: 65%;
+	}
 }
 
 }
