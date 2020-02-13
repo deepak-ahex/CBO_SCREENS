@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../assests/css/styles.css">
-    <title>ClientID-Advanced</title>
+    <title>Area Select</title>
 </head>
 
 <body>
-    <div class="ClientID-Advanced">
+    <div class="Area-select">
         <div class="timeline">
             <ul>
                 <li>1</li>
@@ -34,19 +34,18 @@
                         <option>4</option>
                     </select>
 
-                    <label>Please select document type</label>
-                    <select class="form-control" id="sel2" placeholder="ex:Passport">
-                        <option>Passport</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-
-                    <label>Please select document number</label>
-                    <input type="text" class="form-control" placeholder="ex:295Z9N21"/>
+                    <p>Please select your insurer</p>
+                    <form>
+                        <div class="checkboxes d-flex justify-content-between ">
+                          <label for="x"><input type="checkbox" id="x" class="checked-1"/> <span>Generali</span></label>
+                          <label for="y"><input type="checkbox" id="y" class="checked-1" /> <span>Alianz</span></label>
+                          <label for="z"><input type="checkbox" id="z" class="checked-1" /> <span>Other</span></label>
+                        </div>
+                    </form>
+                      
 
                     <button class="btn btn-primary">Next</button>
-                    <a class="text-center font-weight-bold" href="javascript:void()">Simple identification</a>
+                    <a class="text-center font-weight-bold" href="javascript:void()">Identification</a>
                     <img class="footer-img" src="../assests/images/cbo-siemens.png" alt="branding">
                 </div>
             </div>
@@ -54,8 +53,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous">
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

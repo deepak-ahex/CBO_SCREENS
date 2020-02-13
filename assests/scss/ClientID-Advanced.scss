@@ -1,31 +1,24 @@
 
 .ClientID-Advanced{
 
-    font-family: 'Montserrat', sans-serif;
+ font-family: 'Montserrat', sans-serif;
     
 .timeline{
  margin-bottom: 50px;
 }
 
-input[type=text] {
-	width: 580px;
-	margin-bottom: 30px;
-}
-.btn-primary {
-	width: 70%;
-	display: block;
-    margin: 0 auto;
-    background-color: $bluecolor;
+label{
+    margin-top:20px;
+    margin-bottom: -5px;
 }
 
-button.btn.btn-outline-secondary.dropdown-toggle {
-    height: 38px;
-    padding-top: 9px;
-    border: 1px solid $greycolor;
+.btn-primary {
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
 .form-section img {
-    margin-top: 40px;
+    padding-top: 30px;
     margin: 0 auto;
     display: block;
     cursor: pointer;
@@ -33,23 +26,14 @@ button.btn.btn-outline-secondary.dropdown-toggle {
 
 .form-section a{
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
 }
-
-
 
 @media screen and (max-width:768px){
-
-    input[type=text] {
-        width:300px;
-        margin-bottom: 30px;
+	label{
+        font-family: 'Montserrat', sans-serif !important;
     }
-
-    .form-section {
-        width: 300px;
-        margin: 0 auto;
-	}
-	
 }
+
 
 }

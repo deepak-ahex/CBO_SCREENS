@@ -4,6 +4,7 @@ h2,h3,p{
 }
 a{
 	text-decoration: underline;
+	color: $bluecolor;
 	&:hover{
 		color: $bluecolor;
 	}
@@ -72,7 +73,7 @@ input[type=submit] {
 textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus,button:focus,button:active,button:hover,label:focus,.btn:active,.btn.active
 {
     outline:0px !important;
-    -webkit-appearance:none;
+    // -webkit-appearance:none;
     box-shadow: none !important;
 }
 
@@ -104,13 +105,16 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 			&::after {
 				position: absolute;
 				content: "";
-				width: 107px;
+				width: 129px;
 				height: 2px;
 				border-bottom: 2px solid $greycolor;
 				top: 24px;
-				right: -107px;
+				right: -130px;
 			}
 			&:last-child {
+
+				margin-right: 0;
+
 				&::after {
 					display: none;
 				}
@@ -127,22 +131,30 @@ ul {
 	li {
 		border: 1px solid $greycolor;
 		padding: 14px 23px;
-		margin-right: 100px;
+		margin-right: 125px;
 		list-style-type: none;
 		border-radius: 100%;
 		font-family: 'Montserrat', sans-serif;
 		&:first-child {
 			border: 1px solid $bluecolor;
 			padding: 14px 23px;
-			margin-right: 100px;
+			margin-right: 125px;
 			list-style-type: none;
 			border-radius: 100%;
 			font-family: 'Montserrat', sans-serif;
+			margin-left: -32px;
 		}
 	}
 	display: block;
 	margin: 0 auto;
 }
+@media screen and (max-width:550px) {
+	.form-section {
+		width: 322px;
+		margin: 0 auto;
+	}	
+}
+
 @media screen and (max-width: 768px) {
 
 	input[type=text] {
@@ -183,7 +195,7 @@ ul {
 	  }
   
 	.form-section {
-		width:100%;
+		width:680px;
 		padding: 1px 30px;
 	}
   
@@ -263,4 +275,8 @@ ul {
 	.content-section{
 		width: 100%;
 	}
+
+	
+
+	
   }

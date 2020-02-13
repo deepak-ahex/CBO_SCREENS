@@ -1,0 +1,69 @@
+
+.AreaSelect-Other-Insurer{
+font-family: 'Montserrat', sans-serif;
+    
+.timeline{
+ margin-bottom: 50px;
+}
+
+input.checked-1[type=checkbox],
+input.checked-1[type=radio] {
+ height: 20px;
+ width: 21px;
+ background: #232322;
+}
+
+p{
+    font-size: 24px;
+    line-height: 45px;
+    color: $greycolor;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 29px;
+    }
+
+label{
+    margin-top:20px;
+    margin-bottom: -5px;
+}
+
+.btn-primary {
+    margin-top: 128px;
+    margin-bottom: 36px;
+}
+
+.form-section img {
+    padding-top: 23px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.form-section a{
+    display: block;
+    padding-top: 20px;
+}
+.checkboxes label {
+    // display: inline-block;
+    // padding-right: 80px;
+    white-space: nowrap;
+    margin-top: 0px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .checkboxes input {
+    vertical-align: middle;
+  }
+  .checkboxes label span {
+    vertical-align: middle;
+  }
+
+@media screen and (max-width:768px){
+	label{
+        font-family: 'Montserrat', sans-serif !important;
+        margin: 0 !important;
+    }
+}
+
+
+}

@@ -39,7 +39,8 @@ h2, h3, p {
   font-family: 'Montserrat', sans-serif; }
 
 a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #0197a9; }
   a:hover {
     color: #0197a9; }
 
@@ -102,7 +103,6 @@ input[type=text] {
 
 textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
   outline: 0px !important;
-  -webkit-appearance: none;
   box-shadow: none !important; }
 
 .btn-primary {
@@ -123,13 +123,15 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     .timeline ul li::after {
       position: absolute;
       content: "";
-      width: 107px;
+      width: 129px;
       height: 2px;
       border-bottom: 2px solid #67757c;
       top: 24px;
-      right: -107px; }
-    .timeline ul li:last-child::after {
-      display: none; }
+      right: -130px; }
+    .timeline ul li:last-child {
+      margin-right: 0; }
+      .timeline ul li:last-child::after {
+        display: none; }
     .timeline ul li:nth-child(1)::after {
       border-bottom: 2px solid #0197a9; }
 
@@ -139,17 +141,23 @@ ul {
   ul li {
     border: 1px solid #67757c;
     padding: 14px 23px;
-    margin-right: 100px;
+    margin-right: 125px;
     list-style-type: none;
     border-radius: 100%;
     font-family: 'Montserrat', sans-serif; }
     ul li:first-child {
       border: 1px solid #0197a9;
       padding: 14px 23px;
-      margin-right: 100px;
+      margin-right: 125px;
       list-style-type: none;
       border-radius: 100%;
-      font-family: 'Montserrat', sans-serif; }
+      font-family: 'Montserrat', sans-serif;
+      margin-left: -32px; }
+
+@media screen and (max-width: 550px) {
+  .form-section {
+    width: 322px;
+    margin: 0 auto; } }
 
 @media screen and (max-width: 768px) {
   input[type=text] {
@@ -182,7 +190,7 @@ ul {
     margin-top: 30px;
     cursor: pointer; }
   .form-section {
-    width: 100%;
+    width: 680px;
     padding: 1px 30px; }
   ul li {
     padding: 8px 16px; }
@@ -301,25 +309,22 @@ ul {
   .confirm_Appointment_wrapper input[type=text] {
     width: 100%;
     margin-bottom: 28px; }
-  .confirm_Appointment_wrapper .form-section {
-    width: 620px;
-    margin: 0 auto; }
-    .confirm_Appointment_wrapper .form-section img {
-      margin-top: 50px;
-      display: block;
-      cursor: pointer; }
-    .confirm_Appointment_wrapper .form-section a {
-      display: block;
-      padding-top: 20px;
-      text-decoration: underline; }
-      .confirm_Appointment_wrapper .form-section a hover {
-        color: #0197a9; }
-    .confirm_Appointment_wrapper .form-section h3 {
-      font-size: 24px;
-      line-height: 53px;
-      color: #0197a9;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400; }
+  .confirm_Appointment_wrapper .form-section img {
+    margin-top: 50px;
+    display: block;
+    cursor: pointer; }
+  .confirm_Appointment_wrapper .form-section a {
+    display: block;
+    padding-top: 20px;
+    text-decoration: underline; }
+    .confirm_Appointment_wrapper .form-section a hover {
+      color: #0197a9; }
+  .confirm_Appointment_wrapper .form-section h3 {
+    font-size: 24px;
+    line-height: 53px;
+    color: #0197a9;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; }
   .confirm_Appointment_wrapper .title-section {
     width: 50%; }
     .confirm_Appointment_wrapper .title-section p {
@@ -445,33 +450,23 @@ ul {
   font-family: 'Montserrat', sans-serif; }
   .ClientID-Advanced .timeline {
     margin-bottom: 50px; }
-  .ClientID-Advanced input[type=text] {
-    width: 580px;
-    margin-bottom: 30px; }
+  .ClientID-Advanced label {
+    margin-top: 20px;
+    margin-bottom: -5px; }
   .ClientID-Advanced .btn-primary {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    background-color: #0197a9; }
-  .ClientID-Advanced button.btn.btn-outline-secondary.dropdown-toggle {
-    height: 38px;
-    padding-top: 9px;
-    border: 1px solid #67757c; }
+    margin-top: 36px;
+    margin-bottom: 36px; }
   .ClientID-Advanced .form-section img {
-    margin-top: 40px;
+    padding-top: 30px;
     margin: 0 auto;
     display: block;
     cursor: pointer; }
   .ClientID-Advanced .form-section a {
     display: block;
-    padding-top: 20px; }
+    padding-top: 40px; }
   @media screen and (max-width: 768px) {
-    .ClientID-Advanced input[type=text] {
-      width: 300px;
-      margin-bottom: 30px; }
-    .ClientID-Advanced .form-section {
-      width: 300px;
-      margin: 0 auto; } }
+    .ClientID-Advanced label {
+      font-family: 'Montserrat', sans-serif !important; } }
 
 .confirm_Appointment_FromEmail .form-section {
   width: 620px;
@@ -625,3 +620,153 @@ ul {
     font-family: "Montserrat";
     font-weight: 400;
     text-align: center; }
+
+.search-resultswrapper {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 27px; }
+  .search-resultswrapper .info-icon-section i {
+    color: #0197a9; }
+  .search-resultswrapper span {
+    color: #0197a9; }
+  .search-resultswrapper input[type=text] {
+    width: 620px;
+    margin-bottom: 28px; }
+  .search-resultswrapper .btn-primary {
+    width: 110px;
+    height: 35px;
+    background-color: #0197a9; }
+  .search-resultswrapper .form-section {
+    width: 620px;
+    margin: 0 auto; }
+    .search-resultswrapper .form-section a {
+      display: block;
+      padding-top: 20px;
+      margin-bottom: 30px; }
+  .search-resultswrapper select#sel1 {
+    margin-bottom: 39px; }
+  .search-resultswrapper p.required-text {
+    color: #ef952b; }
+  .search-resultswrapper .upload {
+    padding: 20px 0px;
+    margin: 0 auto; }
+  .search-resultswrapper .clear-fix {
+    overflow: auto; }
+  .search-resultswrapper .info-wrapper {
+    padding: 20px;
+    margin-bottom: 73px;
+    border: 1px solid #ef952b;
+    background-color: #fafafa;
+    overflow: auto; }
+  .search-resultswrapper .info {
+    overflow: auto; }
+  .search-resultswrapper p.info-title {
+    font-weight: 700; }
+  .search-resultswrapper .available-appointment span {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 17px;
+    font-weight: 700; }
+  .search-resultswrapper .available-appointment {
+    margin-top: 48px;
+    margin-bottom: 15px; }
+  .search-resultswrapper button {
+    width: 44px;
+    height: 20px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; }
+  @media screen and (max-width: 768) {
+    .search-resultswrapper .info-text {
+      width: 65%; } }
+
+.Area-select {
+  font-family: 'Montserrat', sans-serif; }
+  .Area-select .timeline {
+    margin-bottom: 50px; }
+  .Area-select input.checked-1[type=checkbox],
+  .Area-select input.checked-1[type=radio] {
+    height: 20px;
+    width: 21px;
+    background: #232322; }
+  .Area-select p {
+    font-size: 24px;
+    line-height: 45px;
+    color: #67757c;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 29px; }
+  .Area-select label {
+    margin-top: 20px;
+    margin-bottom: -5px; }
+  .Area-select .btn-primary {
+    margin-top: 128px;
+    margin-bottom: 36px; }
+  .Area-select .form-section img {
+    padding-top: 23px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer; }
+  .Area-select .form-section a {
+    display: block;
+    padding-top: 20px; }
+  .Area-select .checkboxes label {
+    white-space: nowrap;
+    margin-top: 0px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif; }
+  .Area-select .checkboxes input {
+    vertical-align: middle; }
+  .Area-select .checkboxes label span {
+    vertical-align: middle; }
+  @media screen and (max-width: 768px) {
+    .Area-select label {
+      font-family: 'Montserrat', sans-serif !important;
+      margin: 0 !important; } }
+
+.AreaSelect-Other-Insurer {
+  font-family: 'Montserrat', sans-serif; }
+  .AreaSelect-Other-Insurer .timeline {
+    margin-bottom: 50px; }
+  .AreaSelect-Other-Insurer input.checked-1[type=checkbox],
+  .AreaSelect-Other-Insurer input.checked-1[type=radio] {
+    height: 20px;
+    width: 21px;
+    background: #232322; }
+  .AreaSelect-Other-Insurer p {
+    font-size: 24px;
+    line-height: 45px;
+    color: #67757c;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 29px; }
+  .AreaSelect-Other-Insurer label {
+    margin-top: 20px;
+    margin-bottom: -5px; }
+  .AreaSelect-Other-Insurer .btn-primary {
+    margin-top: 128px;
+    margin-bottom: 36px; }
+  .AreaSelect-Other-Insurer .form-section img {
+    padding-top: 23px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer; }
+  .AreaSelect-Other-Insurer .form-section a {
+    display: block;
+    padding-top: 20px; }
+  .AreaSelect-Other-Insurer .checkboxes label {
+    white-space: nowrap;
+    margin-top: 0px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif; }
+  .AreaSelect-Other-Insurer .checkboxes input {
+    vertical-align: middle; }
+  .AreaSelect-Other-Insurer .checkboxes label span {
+    vertical-align: middle; }
+  @media screen and (max-width: 768px) {
+    .AreaSelect-Other-Insurer label {
+      font-family: 'Montserrat', sans-serif !important;
+      margin: 0 !important; } }
