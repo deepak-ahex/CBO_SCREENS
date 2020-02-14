@@ -747,7 +747,7 @@ ul {
     margin-top: 20px;
     margin-bottom: -5px; }
   .AreaSelect-Other-Insurer .btn-primary {
-    margin-top: 128px;
+    margin-top: 38px;
     margin-bottom: 36px; }
   .AreaSelect-Other-Insurer .form-section img {
     padding-top: 23px;
@@ -770,3 +770,72 @@ ul {
     .AreaSelect-Other-Insurer label {
       font-family: 'Montserrat', sans-serif !important;
       margin: 0 !important; } }
+
+.SlotSearch {
+  font-family: 'Montserrat', sans-serif; }
+  .SlotSearch .timeline {
+    margin-bottom: 50px; }
+  .SlotSearch input.checked-1[type=checkbox],
+  .SlotSearch input.checked-1[type=radio] {
+    height: 20px;
+    width: 21px;
+    background: #232322; }
+  .SlotSearch p {
+    font-size: 24px;
+    line-height: 45px;
+    color: #67757c;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 29px; }
+  .SlotSearch label {
+    margin-top: 20px;
+    margin-bottom: -5px; }
+  .SlotSearch .btn-primary {
+    margin-top: 128px;
+    margin-bottom: 36px; }
+  .SlotSearch .form-section img {
+    padding-top: 23px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer; }
+  .SlotSearch .form-section a {
+    display: block;
+    margin-top: 179px; }
+  .SlotSearch .checkboxes label {
+    white-space: nowrap;
+    margin-top: 0px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif; }
+  .SlotSearch .checkboxes input {
+    vertical-align: middle; }
+  .SlotSearch .checkboxes label span {
+    vertical-align: middle; }
+  @media screen and (max-width: 768px) {
+    .SlotSearch label {
+      font-family: 'Montserrat', sans-serif !important;
+      margin: 0 !important; }
+    .SlotSearch p {
+      font-size: 17px;
+      font-family: 'Montserrat', sans-serif !important; } }
+
+.ClientID-Advanced-Fields-Completed {
+  font-family: 'Montserrat', sans-serif; }
+  .ClientID-Advanced-Fields-Completed .timeline {
+    margin-bottom: 50px; }
+  .ClientID-Advanced-Fields-Completed label {
+    margin-top: 20px;
+    margin-bottom: -5px; }
+  .ClientID-Advanced-Fields-Completed .btn-primary {
+    margin-top: 36px;
+    margin-bottom: 36px; }
+  .ClientID-Advanced-Fields-Completed .form-section img {
+    padding-top: 30px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer; }
+  .ClientID-Advanced-Fields-Completed .form-section a {
+    display: block;
+    padding-top: 40px; }
+  @media screen and (max-width: 768px) {
+    .ClientID-Advanced-Fields-Completed label {
+      font-family: 'Montserrat', sans-serif !important; } }

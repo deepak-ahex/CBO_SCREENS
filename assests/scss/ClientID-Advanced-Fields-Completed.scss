@@ -1,0 +1,39 @@
+
+.ClientID-Advanced-Fields-Completed{
+
+ font-family: 'Montserrat', sans-serif;
+    
+.timeline{
+ margin-bottom: 50px;
+}
+
+label{
+    margin-top:20px;
+    margin-bottom: -5px;
+}
+
+.btn-primary {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.form-section img {
+    padding-top: 30px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.form-section a{
+    display: block;
+    padding-top: 40px;
+}
+
+@media screen and (max-width:768px){
+	label{
+        font-family: 'Montserrat', sans-serif !important;
+    }
+}
+
+
+}
