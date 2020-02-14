@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../assests/css/styles.css">
-    <link rel="stylesheet" href="../assests/css/select.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -31,30 +31,50 @@
         <div class="container ">
             <div class="row">
                 <div class="form-section">
-                    <label>Please enter your document number</label>
+                    <label>Please select your country</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="target" placeholder="Romnia"
+                            aria-label="Text input with segmented dropdown button">
+                        <div class="input-group-append">
+                            <button type="button"
+                                class="btn btn-outline-secondary country dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <select class="country dropdown-menu">
+                                    <option value="USA">United States</option>
+                                    <option value="India">India</option>
+                                    <option value="UK">United Kingdom</option>
+                                </select>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                        </div>
+                    </div>
 
-                    <div class="select-test">
-                        <input type="hidden" name="" value="">
-                        <button>
-                          <span>Select</span>
-                          <span class="caret"></span>
-                        </button>
-                        <ul>
-                          <li value="foo">foo</li>
-                          <li value="bar">bar</li>
-                        </ul>
-                      </div>
+                    <label>Please select your document type</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="target1" placeholder="ID CARD"
+                            aria-label="Text input with segmented dropdown1 button">
+                        <div class="input-group-append">
+                            <button type="button"
+                                class="btn btn-outline-secondary country dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <select class="Document dropdown-menu">
+                                    <option value="ID CARD">Id Card</option>
+                                    <option value="Document2">Document2</option>
+                                    <option value="Document3">Document3</option>
+                                </select>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                        </div>
+                    </div>
 
-                    <label>Please select document type</label>
-                    <select class="form-control" id="sel2" placeholder="ex:Passport">
-                        <option>Passport</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
 
-                    <label>Please select document number</label>
-                    <input type="text" class="form-control" placeholder="ex:295Z9N21" />
+                    <label>Please enter document number</label>
+                    <div class="delete"> 
+                        <input type="text" class="form-control" placeholder="ex:295Z9N21" />
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    
+
 
                     <button class="btn btn-primary">Next</button>
                     <a class="text-center font-weight-bold" href="javascript:void()">Simple identification</a>
@@ -63,8 +83,9 @@
             </div>
         </div>
     </div>
+    </div>
 
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -75,7 +96,24 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"
         integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI=" crossorigin="anonymous"></script>
-    <script src="../assests/js/select.js"></script>
+    <script src="../assests/js/input.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("select.country").change(function () {
+                var selectedCountry = $(this).children("option:selected").val();
+                $("#target").val(selectedCountry)
+            });
+        });
+
+        $(document).ready(function () {
+            $("select.Document").change(function () {
+                var selectedDocument = $(this).children("option:selected").val();
+                $("#target1").val(selectedDocument)
+            });
+        });
+
+    </script>
 
 </body>
 

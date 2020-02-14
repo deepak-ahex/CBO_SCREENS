@@ -8,16 +8,20 @@
     color: #bdbdbd;
     padding-left: 5px !important;
     font-family: 'Montserrat', sans-serif; }
-  .clientID-wrapper .section-1 {
+  .clientID-wrapper .form-section1 {
     margin: 0 auto;
     width: 620px; }
-    .clientID-wrapper .section-1 input {
+    .clientID-wrapper .form-section1 input {
       width: 100%; }
-    .clientID-wrapper .section-1 img {
-      padding-top: 30px;
+    .clientID-wrapper .form-section1 input[type="submit"] {
+      font-family: "Montserrat", sans-serif;
+      display: block;
+      width: 350px; }
+    .clientID-wrapper .form-section1 img {
+      padding-top: 0px;
       display: block;
       margin: 0 auto; }
-    .clientID-wrapper .section-1 p {
+    .clientID-wrapper .form-section1 p {
       padding: 40px 0px 40px 0px;
       font-size: 16px;
       line-height: 53px;
@@ -25,24 +29,37 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       text-align: center; }
-      .clientID-wrapper .section-1 p a {
+      .clientID-wrapper .form-section1 p a {
+        font-family: 'Montserrat', sans-serif;
         color: #0197a9;
-        text-decoration: underline; }
+        text-decoration: underline;
+        display: block;
+        margin-top: 62px;
+        margin-bottom: 0px; }
   @media screen and (max-width: 768px) {
     .clientID-wrapper {
       margin-top: 83px; }
-      .clientID-wrapper .section-1 {
+      .clientID-wrapper .form-section1 {
         padding: 30px;
-        width: 100%; } }
+        width: 100%; }
+      .clientID-wrapper input[type="submit"] {
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        width: 260px; } }
 
-h2, h3, p {
-  font-family: 'Montserrat', sans-serif; }
-
-a {
-  text-decoration: underline;
-  color: #0197a9; }
-  a:hover {
+h2,
+h3,
+p {
+  font-family: "Montserrat", sans-serif; }
+  h2 a,
+  h3 a,
+  p a {
+    text-decoration: underline;
     color: #0197a9; }
+    h2 a:hover,
+    h3 a:hover,
+    p a:hover {
+      color: #0197a9; }
 
 h3 {
   font-size: 24px;
@@ -54,7 +71,7 @@ h3 {
   line-height: 53px;
   color: #bdbdbd;
   padding-left: 5px !important;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .content-section {
   width: 50%; }
@@ -79,12 +96,12 @@ label {
   font-size: 24px;
   line-height: 53px;
   color: #67757c;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: center; }
 
-input[type=submit] {
-  font-family: 'Montserrat', sans-serif;
+input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
   display: block;
   width: 350px;
   background-color: #0197a9;
@@ -96,12 +113,54 @@ input[type=submit] {
   margin-bottom: 10px;
   cursor: pointer; }
 
-input[type=text] {
+input[type="text"] {
   width: 100%;
   margin-bottom: 160px;
   height: 35px; }
 
-textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
+.dropdown-toggle-split {
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem;
+  padding-bottom: 0;
+  border-color: #c3c2c2; }
+
+.dropdown-toggle-split::after {
+  margin-left: 0;
+  color: #0197a9; }
+
+.dropdown-toggle-split:hover {
+  background-color: #fff;
+  border-color: #c3c2c2;
+  color: #0197a9; }
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #ffffff !important;
+  border-color: #c3c2c2; }
+
+i.fa.fa-times {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  color: #67757c;
+  font-weight: 400; }
+
+.delete {
+  position: relative; }
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
   outline: 0px !important;
   box-shadow: none !important; }
 
@@ -144,14 +203,14 @@ ul {
     margin-right: 125px;
     list-style-type: none;
     border-radius: 100%;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
     ul li:first-child {
       border: 1px solid #0197a9;
       padding: 14px 23px;
       margin-right: 125px;
       list-style-type: none;
       border-radius: 100%;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       margin-left: -32px; }
 
 @media screen and (max-width: 550px) {
@@ -160,12 +219,12 @@ ul {
     margin: 0 auto; } }
 
 @media screen and (max-width: 768px) {
-  input[type=text] {
+  input[type="text"] {
     width: 100% !important;
     margin-bottom: 20px;
     margin: 0 auto;
     display: block; }
-  input[type=email] {
+  input[type="email"] {
     width: 100% !important;
     margin-bottom: 20px;
     margin: 0 auto;
@@ -177,8 +236,8 @@ ul {
     background: #0197a9 !important; }
     .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
       background-color: #0197a9 !important; }
-  input[type=submit] {
-    font-family: 'Montserrat', sans-serif;
+  input[type="submit"] {
+    font-family: "Montserrat", sans-serif;
     display: block;
     width: 260px;
     background-color: #0197a9;
@@ -224,7 +283,7 @@ ul {
         margin-right: 26px;
         list-style-type: none;
         border-radius: 100%;
-        font-family: 'Montserrat', sans-serif; }
+        font-family: "Montserrat", sans-serif; }
   img.branding {
     display: none; }
   img.branding-m {
@@ -232,7 +291,7 @@ ul {
   label {
     font-size: 17px;
     line-height: 53px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #67757c !important;
     display: initial;
     margin: 0 auto; }
@@ -607,7 +666,8 @@ ul {
       text-align: center; }
       .clinical-order-Message .section-1 p.Identification a {
         color: #0197a9;
-        text-decoration: underline; }
+        text-decoration: underline;
+        margin: 0 auto; }
   .clinical-order-Message p.details {
     font-size: 17px;
     line-height: 17px;

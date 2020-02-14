@@ -9,16 +9,20 @@
 	font-family: 'Montserrat', sans-serif;
   }
 
-.section-1{
+.form-section1{
     margin: 0 auto;
     width: 620px;
    
     input{
         width:100%;
     }
-     
+    input[type="submit"] {
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        width: 350px;
+    }
     img{
-        padding-top: 30px;
+        padding-top: 0px;
         display: block;
         margin: 0 auto;
     }
@@ -32,8 +36,12 @@
             text-align: center;
 
             a{
+                font-family: 'Montserrat', sans-serif;
                 color: $bluecolor;
                 text-decoration: underline;
+                display: block;
+                margin-top: 62px;
+                margin-bottom: 0px;
             }
     }
 }
@@ -41,9 +49,14 @@
 @media screen and (max-width: 768px) {
     margin-top: 83px;
 
-    .section-1{
+    .form-section1{
         padding:30px;
         width: 100%;
+    }
+    input[type="submit"] {
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        width: 260px;
     }
 
 }
