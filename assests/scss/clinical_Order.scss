@@ -9,7 +9,7 @@ input[type=text] {
 	margin-bottom: 30px;
 }
 .form-section {
-	width: 670px;
+	width: 640px;
 	margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ p.normal-text{
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
 
     margin-top: 12px;
 
@@ -63,10 +63,10 @@ p.normal-text{
         line-height: 53px;
         color: $greycolor;
     }
-    // .form-section {
-    //     width: 260px;
-    //     margin: 0 auto;
-    // }
+    .form-section {
+        width: 260px;
+        margin: 0 auto;
+    }
     // form{
     //     width: 260px;
     // }

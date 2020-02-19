@@ -22,11 +22,19 @@
         font-size: 20px;
         line-height: 18px;   
     }
-    .image{
+    .desktop{
       position: fixed;
       bottom: 15px;
-      transform: translateX(26%);
+      transform: translateX(23%);
      }
+
+     img.mob{
+          
+      display: none;
+    }
+    img.desktop{
+      display: block;
+    }
 
       @media screen and (max-width:768px) {
         h2{
@@ -42,17 +50,14 @@
             width: 620px;
             margin: 0 auto;
         }
-        .image{
-          position: fixed;
-          bottom: 15px;
-          transform: translateX(19%);
-         }
+        
      }
      @media (min-width:320px) and (max-width:425px) {
-      .image{
-        position: fixed;
-        bottom: 15px;
-        transform: translateX(22%);
-       }
+      img.mob{
+        display: block;
+      }
+      img.desktop{
+        display: none;
+      }
      }
 }

@@ -1,6 +1,15 @@
 .clinical-order-Message {
   margin-top: 50px;
 
+  .btn-primary {
+    width: 350px;
+    margin-top: 113px !important;
+    margin-bottom: 41px !important;
+    display: block;
+    margin: 0 auto;
+    background: #0197a9 !important;
+}
+
   .section-1 {
     margin: 0 auto;
     width: 620px;
@@ -23,6 +32,7 @@
         color: $bluecolor;
         text-decoration: underline;
         margin: 0 auto;
+        margin-bottom: 23px;
       }
     }
   }
@@ -40,5 +50,20 @@
     font-family: "Montserrat";
     font-weight: 400;
     text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-1 {
+      margin: 0 auto;
+      width: 320px;
+    }
+    .btn-primary {
+      width: 260px;
+      display: block;
+    margin: 0 auto;
+  }
+  p{
+    width: 260px;
+  }
   }
 }

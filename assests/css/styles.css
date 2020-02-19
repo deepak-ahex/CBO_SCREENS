@@ -41,11 +41,11 @@
       margin-top: 83px; }
       .clientID-wrapper .form-section1 {
         padding: 30px;
-        width: 100%; }
+        width: 320px; }
       .clientID-wrapper input[type="submit"] {
         font-family: "Montserrat", sans-serif;
         display: block;
-        width: 260px; } }
+        width: 260px !important; } }
 
 h2,
 h3,
@@ -60,6 +60,16 @@ p {
     h3 a:hover,
     p a:hover {
       color: #0197a9; }
+
+a {
+  display: block;
+  padding-top: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #0197a9; }
+
+a:hover {
+  color: #0197a9; }
 
 h3 {
   font-size: 24px;
@@ -249,7 +259,7 @@ ul {
     margin-top: 30px;
     cursor: pointer; }
   .form-section {
-    width: 680px;
+    width: 320px;
     padding: 1px 30px; }
   ul li {
     padding: 8px 16px; }
@@ -320,7 +330,7 @@ ul {
     width: 620px;
     margin-bottom: 30px; }
   .clinical_Order-wrapper .form-section {
-    width: 670px;
+    width: 640px;
     margin: 0 auto; }
   .clinical_Order-wrapper .form-section a {
     display: block;
@@ -344,7 +354,7 @@ ul {
     display: none; }
   .clinical_Order-wrapper .image-upload img {
     cursor: pointer; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .clinical_Order-wrapper {
       margin-top: 12px; }
       .clinical_Order-wrapper p.required-text {
@@ -356,6 +366,9 @@ ul {
         font-size: 17px;
         line-height: 53px;
         color: #67757c; }
+      .clinical_Order-wrapper .form-section {
+        width: 260px;
+        margin: 0 auto; }
       .clinical_Order-wrapper image {
         height: 160px;
         width: 39px; } }
@@ -419,7 +432,12 @@ ul {
       display: block; }
     .Exam-preparation-wrapper .form-section a {
       display: block;
-      padding-top: 20px; }
+      padding-top: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      color: #0197a9; }
+    .Exam-preparation-wrapper .form-section a:hover {
+      color: #0197a9; }
     .Exam-preparation-wrapper .form-section h3 {
       font-family: 'Roboto', sans-serif;
       font-size: 24px;
@@ -555,6 +573,17 @@ ul {
   background-color: #ef952b;
   color: #fff; }
 
+.confirm_Appointment_FromEmail .desktop {
+  position: fixed;
+  bottom: 15px;
+  transform: translateX(50%); }
+
+.confirm_Appointment_FromEmail img.mob {
+  display: none; }
+
+.confirm_Appointment_FromEmail img.desktop {
+  display: block; }
+
 @media screen and (max-width: 600px) {
   .confirm_Appointment_FromEmail .title-section {
     width: 260px; }
@@ -576,6 +605,15 @@ ul {
     margin: 0 auto;
     text-align: left; } }
 
+@media (min-width: 320px) and (max-width: 425px) {
+  .confirm_Appointment_FromEmail img.mob {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    transform: translateX(33%); }
+  .confirm_Appointment_FromEmail img.desktop {
+    display: none; } }
+
 .confirm_Appointment_FromEmaillink-Cancelled {
   color: #67757c; }
   .confirm_Appointment_FromEmaillink-Cancelled .form-section {
@@ -594,10 +632,14 @@ ul {
   .confirm_Appointment_FromEmaillink-Cancelled p {
     font-size: 20px;
     line-height: 18px; }
-  .confirm_Appointment_FromEmaillink-Cancelled .image {
+  .confirm_Appointment_FromEmaillink-Cancelled .desktop {
     position: fixed;
     bottom: 15px;
-    transform: translateX(26%); }
+    transform: translateX(23%); }
+  .confirm_Appointment_FromEmaillink-Cancelled img.mob {
+    display: none; }
+  .confirm_Appointment_FromEmaillink-Cancelled img.desktop {
+    display: block; }
   @media screen and (max-width: 768px) {
     .confirm_Appointment_FromEmaillink-Cancelled h2 {
       font-size: 20px;
@@ -607,16 +649,12 @@ ul {
       line-height: 18px; }
     .confirm_Appointment_FromEmaillink-Cancelled .form-section {
       width: 620px;
-      margin: 0 auto; }
-    .confirm_Appointment_FromEmaillink-Cancelled .image {
-      position: fixed;
-      bottom: 15px;
-      transform: translateX(19%); } }
+      margin: 0 auto; } }
   @media (min-width: 320px) and (max-width: 425px) {
-    .confirm_Appointment_FromEmaillink-Cancelled .image {
-      position: fixed;
-      bottom: 15px;
-      transform: translateX(22%); } }
+    .confirm_Appointment_FromEmaillink-Cancelled img.mob {
+      display: block; }
+    .confirm_Appointment_FromEmaillink-Cancelled img.desktop {
+      display: none; } }
 
 .confirm_Appointment_FromEmaillink-Confirmed {
   color: #67757c; }
@@ -636,6 +674,14 @@ ul {
   .confirm_Appointment_FromEmaillink-Confirmed p {
     font-size: 20px;
     line-height: 18px; }
+  .confirm_Appointment_FromEmaillink-Confirmed .desktop {
+    position: fixed;
+    bottom: 15px;
+    transform: translateX(23%); }
+  .confirm_Appointment_FromEmaillink-Confirmed img.mob {
+    display: none; }
+  .confirm_Appointment_FromEmaillink-Confirmed img.desktop {
+    display: block; }
   @media screen and (max-width: 600px) {
     .confirm_Appointment_FromEmaillink-Confirmed h2 {
       font-size: 20px;
@@ -646,9 +692,25 @@ ul {
     .confirm_Appointment_FromEmaillink-Confirmed .form-section {
       width: 620px;
       margin: 0 auto; } }
+  @media (min-width: 320px) and (max-width: 425px) {
+    .confirm_Appointment_FromEmaillink-Confirmed img.mob {
+      display: block; }
+    .confirm_Appointment_FromEmaillink-Confirmed img.desktop {
+      display: none; }
+    .confirm_Appointment_FromEmaillink-Confirmed .mob {
+      position: fixed;
+      bottom: 15px;
+      transform: translateX(61%); } }
 
 .clinical-order-Message {
   margin-top: 50px; }
+  .clinical-order-Message .btn-primary {
+    width: 350px;
+    margin-top: 113px !important;
+    margin-bottom: 41px !important;
+    display: block;
+    margin: 0 auto;
+    background: #0197a9 !important; }
   .clinical-order-Message .section-1 {
     margin: 0 auto;
     width: 620px; }
@@ -667,7 +729,8 @@ ul {
       .clinical-order-Message .section-1 p.Identification a {
         color: #0197a9;
         text-decoration: underline;
-        margin: 0 auto; }
+        margin: 0 auto;
+        margin-bottom: 23px; }
   .clinical-order-Message p.details {
     font-size: 17px;
     line-height: 17px;
@@ -680,10 +743,33 @@ ul {
     font-family: "Montserrat";
     font-weight: 400;
     text-align: center; }
+  @media screen and (max-width: 768px) {
+    .clinical-order-Message .section-1 {
+      margin: 0 auto;
+      width: 320px; }
+    .clinical-order-Message .btn-primary {
+      width: 260px;
+      display: block;
+      margin: 0 auto; }
+    .clinical-order-Message p {
+      width: 260px; } }
 
 .search-resultswrapper {
   font-family: 'Montserrat', sans-serif;
   margin-top: 27px; }
+  @media screen and (max-width: 768) {
+    .search-resultswrapper .info-text {
+      width: 40%; }
+    .search-resultswrapper .search-resultswrapper .info-wrapper {
+      padding: 0px; }
+    .search-resultswrapper .text-info-head {
+      font-size: 14px !important;
+      letter-spacing: 0px;
+      line-height: 16px; }
+    .search-resultswrapper .text-info-body {
+      font-size: 12px !important;
+      letter-spacing: 0px;
+      line-height: 16px; } }
   .search-resultswrapper .info-icon-section i {
     color: #0197a9; }
   .search-resultswrapper span {
@@ -712,11 +798,10 @@ ul {
   .search-resultswrapper .clear-fix {
     overflow: auto; }
   .search-resultswrapper .info-wrapper {
-    padding: 20px;
+    padding: 10px 45px;
     margin-bottom: 73px;
-    border: 1px solid #ef952b;
-    background-color: #fafafa;
-    overflow: auto; }
+    border: 1px solid #d2d2d2;
+    background-color: #fafafa; }
   .search-resultswrapper .info {
     overflow: auto; }
   .search-resultswrapper p.info-title {
@@ -729,7 +814,7 @@ ul {
     font-weight: 700; }
   .search-resultswrapper .available-appointment {
     margin-top: 48px;
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   .search-resultswrapper button {
     width: 44px;
     height: 20px;
@@ -739,9 +824,12 @@ ul {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700; }
-  @media screen and (max-width: 768) {
-    .search-resultswrapper .info-text {
-      width: 65%; } }
+  .search-resultswrapper p.text-info-head {
+    font-weight: 500; }
+  .search-resultswrapper .info-text .top p {
+    margin-bottom: 2px; }
+  .search-resultswrapper .info-text .bottom {
+    margin-top: 80px; }
 
 .Area-select {
   font-family: 'Montserrat', sans-serif; }

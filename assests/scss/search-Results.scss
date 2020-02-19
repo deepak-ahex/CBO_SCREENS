@@ -3,6 +3,25 @@
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 27px;
 
+	@media screen and (max-width:768) {
+		.info-text {
+			width: 40%;
+		}
+		.search-resultswrapper .info-wrapper{
+			padding: 0px;
+		}
+		.text-info-head {
+			font-size: 14px !important;
+			letter-spacing: 0px;
+			line-height: 16px;
+		}
+		.text-info-body{
+			font-size: 12px !important;
+			letter-spacing: 0px;
+			line-height: 16px;
+		}
+	}
+
 .info-icon-section {
 	i {
 		color: $bluecolor;
@@ -44,11 +63,10 @@ p.required-text {
 	overflow: auto;
 }
 .info-wrapper {
-	padding: 20px;
+	padding: 10px 45px;
 	margin-bottom: 73px;
-	border: 1px solid $orangecolor;
+	border: 1px solid #d2d2d2;
 	background-color: #fafafa;
-	overflow: auto;
 }
 .info {
 	overflow: auto;
@@ -65,7 +83,7 @@ p.info-title {
 }
 .available-appointment{
 	margin-top: 48px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 button{
 	width: 44px;
@@ -77,12 +95,21 @@ button{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
+p.text-info-head{
+ font-weight: 500;
+}
 
-
-@media screen and (max-width:768) {
-	.info-text {
-		width: 65%;
+.info-text {
+	.top{
+		p{
+			margin-bottom: 2px;
+		}	
+	}
+	.bottom {
+		margin-top: 80px;
 	}
 }
+
+
 
 }

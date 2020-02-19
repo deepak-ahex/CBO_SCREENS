@@ -22,6 +22,18 @@
          font-size: 20px;
          line-height: 18px;   
      }
+     .desktop{
+      position: fixed;
+      bottom: 15px;
+      transform: translateX(23%);
+     }
+     img.mob{
+          
+      display: none;
+    }
+    img.desktop{
+      display: block;
+    }
  
        @media screen and (max-width:600px) {
          h2{
@@ -37,5 +49,19 @@
              width: 620px;
              margin: 0 auto;
          }
+        
       }
+      @media (min-width:320px) and (max-width:425px) {
+        img.mob{
+          display: block;
+        }
+        img.desktop{
+          display: none;
+        }
+        .mob{
+          position: fixed;
+          bottom: 15px;
+          transform: translateX(61%);
+         }
+       }
  }

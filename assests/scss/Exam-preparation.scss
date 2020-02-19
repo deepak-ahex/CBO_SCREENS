@@ -13,6 +13,12 @@
 	a {
 		display: block;
 		padding-top: 20px;
+		font-weight: 700;
+		text-decoration: underline;
+		color: $bluecolor;
+	}
+	a:hover{
+		color: $bluecolor;
 	}
 	h3 {
 		font-family: 'Roboto', sans-serif;
@@ -63,8 +69,6 @@
 			line-height: 16px;
 		}
 	}
-
-
 }
 
 }

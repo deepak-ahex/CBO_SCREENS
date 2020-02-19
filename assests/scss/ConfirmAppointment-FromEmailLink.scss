@@ -34,6 +34,19 @@
     background-color: $orangecolor;
     color: #fff;
   }
+  .desktop{
+    position: fixed;
+    bottom: 15px;
+    transform: translateX(50%);
+   }
+
+   img.mob{
+        
+    display: none;
+  }
+  img.desktop{
+    display: block;
+  }
   @media screen and (max-width: 600px) {
     .title-section {
       width: 260px;
@@ -62,4 +75,15 @@
       text-align: left;
     }
   }
+  @media (min-width:320px) and (max-width:425px) {
+    img.mob{
+      display: block;
+      position: fixed;
+      bottom: 10px;
+      transform: translateX(33%);
+    }
+    img.desktop{
+      display: none;
+    }
+   }
 }
