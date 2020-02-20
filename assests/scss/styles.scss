@@ -1,12 +1,11 @@
 @import "variables";
-@import 'clientID';
 @import 'common';
 @import 'fonts';
 @import 'mixins';
+@import 'clientID';
 @import 'clinical_Order';
 @import 'confirm_appointment';
 @import 'Exam-preparation';
-@import 'search-ResultsOutofNetwork';
 @import 'ClientID-Advanced';
 @import 'ConfirmAppointment-FromEmailLink';
 @import 'confirm_Appointment_FromEmaillink-Cancelled';
@@ -17,3 +16,6 @@
 @import 'AreaSelect-Other-Insurer';
 @import 'SlotSearch';
 @import 'ClientID-Advanced-Fields-Completed';
+@import 'search-ResultsOutofNetwork';
+@import 'AreaselectclinicalOrder';
+@import 'slotsearch-results';

@@ -1,4 +1,4 @@
-.search-results-wrapper{
+.search-results-wrapper-out{
 
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 27px;
@@ -60,10 +60,17 @@ p.info-title {
 	font-weight: 700;
 }
 
-@media screen and (max-width:768) {
+@media(max-width:768px) {
+	
+	.form-section {
+		width: 362px;
+		padding: 1px 30px;
+		margin: 0 auto;
+	}
 	.info-text.float-left {
 		width: 65%;
 	}
+	
 }
 
 }

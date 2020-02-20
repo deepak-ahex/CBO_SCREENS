@@ -1,52 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
-.clientID-wrapper {
-  margin-top: 100px; }
-  .clientID-wrapper ::-webkit-input-placeholder {
-    font-size: 15px;
-    line-height: 53px;
-    color: #bdbdbd;
-    padding-left: 5px !important;
-    font-family: 'Montserrat', sans-serif; }
-  .clientID-wrapper .form-section1 {
-    margin: 0 auto;
-    width: 620px; }
-    .clientID-wrapper .form-section1 input {
-      width: 100%; }
-    .clientID-wrapper .form-section1 input[type="submit"] {
-      font-family: "Montserrat", sans-serif;
-      display: block;
-      width: 350px; }
-    .clientID-wrapper .form-section1 img {
-      padding-top: 0px;
-      display: block;
-      margin: 0 auto; }
-    .clientID-wrapper .form-section1 p {
-      padding: 40px 0px 40px 0px;
-      font-size: 16px;
-      line-height: 53px;
-      color: #0197a9;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      text-align: center; }
-      .clientID-wrapper .form-section1 p a {
-        font-family: 'Montserrat', sans-serif;
-        color: #0197a9;
-        text-decoration: underline;
-        display: block;
-        margin-top: 62px;
-        margin-bottom: 0px; }
-  @media screen and (max-width: 768px) {
-    .clientID-wrapper {
-      margin-top: 83px; }
-      .clientID-wrapper .form-section1 {
-        padding: 30px;
-        width: 320px; }
-      .clientID-wrapper input[type="submit"] {
-        font-family: "Montserrat", sans-serif;
-        display: block;
-        width: 260px !important; } }
-
 h2,
 h3,
 p {
@@ -150,6 +103,7 @@ input[type="text"] {
   border-color: #c3c2c2; }
 
 i.fa.fa-times {
+  display: none;
   position: absolute;
   top: 9px;
   right: 10px;
@@ -240,7 +194,7 @@ ul {
     margin: 0 auto;
     display: block; }
   .btn-primary {
-    width: 260px;
+    width: 260px !important;
     display: block;
     margin: 0 auto;
     background: #0197a9 !important; }
@@ -258,9 +212,6 @@ ul {
     border-radius: 3px;
     margin-top: 30px;
     cursor: pointer; }
-  .form-section {
-    width: 320px;
-    padding: 1px 30px; }
   ul li {
     padding: 8px 16px; }
     ul li:first-child {
@@ -323,6 +274,53 @@ ul {
   font-family: Montserrat-Semibold;
   src: url(assests/fonts/Montserrat/Montserrat-SemiBold.ttf); }
 
+.clientID-wrapper {
+  margin-top: 100px; }
+  .clientID-wrapper ::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 53px;
+    color: #bdbdbd;
+    padding-left: 5px !important;
+    font-family: 'Montserrat', sans-serif; }
+  .clientID-wrapper .form-section1 {
+    margin: 0 auto;
+    width: 620px; }
+    .clientID-wrapper .form-section1 input {
+      width: 100%; }
+    .clientID-wrapper .form-section1 input[type="submit"] {
+      font-family: "Montserrat", sans-serif;
+      display: block;
+      width: 350px; }
+    .clientID-wrapper .form-section1 img {
+      padding-top: 0px;
+      display: block;
+      margin: 0 auto; }
+    .clientID-wrapper .form-section1 p {
+      padding: 40px 0px 40px 0px;
+      font-size: 16px;
+      line-height: 53px;
+      color: #0197a9;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      text-align: center; }
+      .clientID-wrapper .form-section1 p a {
+        font-family: 'Montserrat', sans-serif;
+        color: #0197a9;
+        text-decoration: underline;
+        display: block;
+        margin-top: 62px;
+        margin-bottom: 0px; }
+  @media screen and (max-width: 768px) {
+    .clientID-wrapper {
+      margin-top: 83px; }
+      .clientID-wrapper .form-section1 {
+        padding: 30px;
+        width: 320px; }
+      .clientID-wrapper input[type="submit"] {
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        width: 260px !important; } }
+
 .clinical_Order-wrapper {
   font-family: 'Montserrat', sans-serif;
   margin-top: 45px; }
@@ -339,7 +337,7 @@ ul {
   .clinical_Order-wrapper p.required-text {
     color: #ef952b;
     margin-bottom: 24px;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 17px; }
   .clinical_Order-wrapper p.normal-text {
     font-size: 22px;
@@ -367,8 +365,8 @@ ul {
         line-height: 53px;
         color: #67757c; }
       .clinical_Order-wrapper .form-section {
-        width: 260px;
-        margin: 0 auto; }
+        width: 320px;
+        padding: 1px 30px; }
       .clinical_Order-wrapper image {
         height: 160px;
         width: 39px; } }
@@ -477,52 +475,6 @@ ul {
       letter-spacing: 0px;
       line-height: 16px; } }
 
-.search-results-wrapper {
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 27px; }
-  .search-results-wrapper p {
-    margin-bottom: 5px !important; }
-  .search-results-wrapper .info-icon-section i {
-    color: #0197a9; }
-  .search-results-wrapper span {
-    color: #0197a9; }
-  .search-results-wrapper input[type=text] {
-    width: 620px;
-    margin-bottom: 28px; }
-  .search-results-wrapper .btn-primary {
-    width: 110px;
-    height: 35px;
-    background-color: #0197a9; }
-  .search-results-wrapper .form-section {
-    width: 620px;
-    margin: 0 auto; }
-    .search-results-wrapper .form-section a {
-      display: block;
-      padding-top: 20px;
-      margin-bottom: 30px; }
-  .search-results-wrapper select#sel1 {
-    margin-bottom: 39px; }
-  .search-results-wrapper p.required-text {
-    color: #ef952b; }
-  .search-results-wrapper .upload {
-    padding: 20px 0px;
-    margin: 0 auto; }
-  .search-results-wrapper .clear-fix {
-    overflow: auto; }
-  .search-results-wrapper .info-wrapper {
-    padding: 20px;
-    margin-bottom: 73px;
-    border: 1px solid #ef952b;
-    background-color: #fafafa;
-    overflow: auto; }
-  .search-results-wrapper .info {
-    overflow: auto; }
-  .search-results-wrapper p.info-title {
-    font-weight: 700; }
-  @media screen and (max-width: 768) {
-    .search-results-wrapper .info-text.float-left {
-      width: 65%; } }
-
 .ClientID-Advanced {
   font-family: 'Montserrat', sans-serif; }
   .ClientID-Advanced .timeline {
@@ -543,7 +495,11 @@ ul {
     padding-top: 40px; }
   @media screen and (max-width: 768px) {
     .ClientID-Advanced label {
-      font-family: 'Montserrat', sans-serif !important; } }
+      font-family: 'Montserrat', sans-serif !important; }
+    .ClientID-Advanced .form-section {
+      width: 322px;
+      margin: 0 auto;
+      padding: 1px 30px; } }
 
 .confirm_Appointment_FromEmail .form-section {
   width: 620px;
@@ -746,13 +702,12 @@ ul {
   @media screen and (max-width: 768px) {
     .clinical-order-Message .section-1 {
       margin: 0 auto;
-      width: 320px; }
+      width: 320px;
+      padding: 1px 15px; }
     .clinical-order-Message .btn-primary {
       width: 260px;
       display: block;
-      margin: 0 auto; }
-    .clinical-order-Message p {
-      width: 260px; } }
+      margin: 0 auto; } }
 
 .search-resultswrapper {
   font-family: 'Montserrat', sans-serif;
@@ -769,7 +724,11 @@ ul {
     .search-resultswrapper .text-info-body {
       font-size: 12px !important;
       letter-spacing: 0px;
-      line-height: 16px; } }
+      line-height: 16px; }
+    .search-resultswrapper .form-section {
+      width: 360px;
+      margin: 0 auto;
+      padding: 1px 30px; } }
   .search-resultswrapper .info-icon-section i {
     color: #0197a9; }
   .search-resultswrapper span {
@@ -987,3 +946,202 @@ ul {
   @media screen and (max-width: 768px) {
     .ClientID-Advanced-Fields-Completed label {
       font-family: 'Montserrat', sans-serif !important; } }
+
+.search-results-wrapper-out {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 27px; }
+  .search-results-wrapper-out p {
+    margin-bottom: 5px !important; }
+  .search-results-wrapper-out .info-icon-section i {
+    color: #0197a9; }
+  .search-results-wrapper-out span {
+    color: #0197a9; }
+  .search-results-wrapper-out input[type=text] {
+    width: 620px;
+    margin-bottom: 28px; }
+  .search-results-wrapper-out .btn-primary {
+    width: 110px;
+    height: 35px;
+    background-color: #0197a9; }
+  .search-results-wrapper-out .form-section {
+    width: 620px;
+    margin: 0 auto; }
+    .search-results-wrapper-out .form-section a {
+      display: block;
+      padding-top: 20px;
+      margin-bottom: 30px; }
+  .search-results-wrapper-out select#sel1 {
+    margin-bottom: 39px; }
+  .search-results-wrapper-out p.required-text {
+    color: #ef952b; }
+  .search-results-wrapper-out .upload {
+    padding: 20px 0px;
+    margin: 0 auto; }
+  .search-results-wrapper-out .clear-fix {
+    overflow: auto; }
+  .search-results-wrapper-out .info-wrapper {
+    padding: 20px;
+    margin-bottom: 73px;
+    border: 1px solid #ef952b;
+    background-color: #fafafa;
+    overflow: auto; }
+  .search-results-wrapper-out .info {
+    overflow: auto; }
+  .search-results-wrapper-out p.info-title {
+    font-weight: 700; }
+  @media (max-width: 768px) {
+    .search-results-wrapper-out .form-section {
+      width: 362px;
+      padding: 1px 30px;
+      margin: 0 auto; }
+    .search-results-wrapper-out .info-text.float-left {
+      width: 65%; } }
+
+.Area-select-clinical_Order-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 45px; }
+  .Area-select-clinical_Order-wrapper input[type=text] {
+    width: 620px;
+    margin-bottom: 30px; }
+  .Area-select-clinical_Order-wrapper .form-section {
+    width: 640px;
+    margin: 0 auto; }
+  .Area-select-clinical_Order-wrapper .form-section a {
+    display: block;
+    padding-top: 33px;
+    padding-bottom: 28px; }
+  .Area-select-clinical_Order-wrapper p.required-text {
+    color: #ef952b;
+    margin-bottom: 24px;
+    font-size: 23px;
+    line-height: 17px; }
+  .Area-select-clinical_Order-wrapper p.normal-text {
+    font-size: 22px;
+    line-height: 53px;
+    color: #67757c; }
+  .Area-select-clinical_Order-wrapper .upload {
+    padding: 20px 0px;
+    margin: 0 auto; }
+  .Area-select-clinical_Order-wrapper .image-upload {
+    display: grid; }
+  .Area-select-clinical_Order-wrapper .image-upload > input {
+    display: none; }
+  .Area-select-clinical_Order-wrapper .image-upload img {
+    cursor: pointer; }
+  .Area-select-clinical_Order-wrapper .upload-items {
+    width: fit-content; }
+  @media screen and (max-width: 768px) {
+    .Area-select-clinical_Order-wrapper {
+      margin-top: 12px; }
+      .Area-select-clinical_Order-wrapper p.required-text {
+        color: #ef952b;
+        margin-bottom: 15px;
+        font-size: 17px;
+        line-height: 17px; }
+      .Area-select-clinical_Order-wrapper p.normal-text {
+        font-size: 17px;
+        line-height: 53px;
+        color: #67757c; }
+      .Area-select-clinical_Order-wrapper .form-section {
+        width: 320px;
+        padding: 1px 30px; }
+      .Area-select-clinical_Order-wrapper image {
+        height: 160px;
+        width: 39px; } }
+
+@use 'assests/scss/slotsearch-results';
+.SlotSearch-Results {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 27px; }
+  .SlotSearch-Results .info-icon-section i {
+    color: #0197a9; }
+  .SlotSearch-Results span {
+    color: #0197a9; }
+  .SlotSearch-Results input[type=text] {
+    width: 620px;
+    margin-bottom: 28px; }
+  .SlotSearch-Results .btn-primary {
+    width: 110px;
+    height: 35px;
+    background-color: #0197a9; }
+  .SlotSearch-Results .form-section {
+    width: 620px;
+    margin: 0 auto; }
+    .SlotSearch-Results .form-section a {
+      display: block;
+      padding-top: 20px;
+      margin-bottom: 30px; }
+  .SlotSearch-Results select#sel1 {
+    margin-bottom: 39px; }
+  .SlotSearch-Results p.required-text {
+    color: #ef952b; }
+  .SlotSearch-Results .upload {
+    padding: 20px 0px;
+    margin: 0 auto; }
+  .SlotSearch-Results .clear-fix {
+    overflow: auto; }
+  .SlotSearch-Results .info-wrapper {
+    padding: 10px 45px;
+    margin-bottom: 20px;
+    border: 1px solid #d2d2d2;
+    background-color: #fafafa; }
+  .SlotSearch-Results .info-wrapper1 {
+    padding: 10px 45px;
+    margin-bottom: 73px;
+    border: 1px solid #ef952b;
+    background-color: #fafafa; }
+  .SlotSearch-Results .info {
+    overflow: auto; }
+  .SlotSearch-Results p.info-title {
+    font-weight: 700; }
+  .SlotSearch-Results .available-appointment span {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 17px;
+    font-weight: 700; }
+  .SlotSearch-Results .available-appointment {
+    margin-top: 48px;
+    margin-bottom: 30px; }
+  .SlotSearch-Results button {
+    width: 44px;
+    height: 20px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; }
+  .SlotSearch-Results p.text-info-head {
+    font-weight: 500; }
+  .SlotSearch-Results .info-text .top p {
+    margin-bottom: 2px; }
+  .SlotSearch-Results .info-text .bottom {
+    margin-top: 80px; }
+  @media screen and (max-width: 768px) {
+    .SlotSearch-Results .btn-primary {
+      display: block;
+      width: 56px !important;
+      margin: 0px auto; }
+    .SlotSearch-Results .text-info-head {
+      font-size: 14px !important;
+      letter-spacing: 0px;
+      line-height: 16px; }
+    .SlotSearch-Results .text-info-body {
+      font-size: 12px !important;
+      letter-spacing: 0px;
+      line-height: 16px; }
+    .SlotSearch-Results .form-section {
+      width: 362px;
+      padding: 1px 30px;
+      margin: 0 auto; }
+    .SlotSearch-Results .info-wrapper {
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border: 1px solid #d2d2d2;
+      background-color: #fafafa; }
+    .SlotSearch-Results .info-wrapper1 {
+      padding: 10px 20px;
+      margin-bottom: 73px;
+      border: 1px solid #ef952b;
+      background-color: #fafafa; } }
